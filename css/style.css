@@ -4599,3 +4599,26 @@ header{
     z-index:1000;
 }
 
+
+/* =========================================
+   PAGE LOADER FIX
+========================================= */
+
+.loader {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
