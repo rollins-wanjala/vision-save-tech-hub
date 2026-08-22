@@ -1,0 +1,521 @@
+/* =====================================================
+   VISION SAVE HUB TECH
+   REGISTRATION SUCCESS PAGE
+===================================================== */
+
+
+/* =====================================================
+   SUCCESS HERO
+===================================================== */
+
+.success-page {
+    position: relative;
+    max-width: 1100px;
+    margin: 40px auto 0;
+    padding: 70px 25px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 0 0 25px 25px;
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        #063b6f,
+        #0b6fa4
+    );
+    color: #ffffff;
+    box-shadow: 0 12px 35px rgba(0,0,0,.15);
+}
+
+
+/* Decorative circles */
+
+.success-page::before,
+.success-page::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,.08);
+}
+
+.success-page::before {
+    width: 250px;
+    height: 250px;
+    top: -120px;
+    left: -80px;
+}
+
+.success-page::after {
+    width: 300px;
+    height: 300px;
+    bottom: -170px;
+    right: -100px;
+}
+
+
+/* =====================================================
+   SUCCESS ICON
+===================================================== */
+
+.success-icon {
+    position: relative;
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+    color: #16a34a;
+
+    font-size: 55px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.20);
+
+    animation: successPop .6s ease;
+}
+
+
+@keyframes successPop {
+
+    0% {
+        transform: scale(.5);
+        opacity: 0;
+    }
+
+    70% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+
+/* =====================================================
+   SUCCESS TEXT
+===================================================== */
+
+.success-page h1 {
+    position: relative;
+    z-index: 2;
+
+    margin: 0 0 15px;
+
+    font-size: 42px;
+    font-weight: 800;
+
+    color: #ffffff;
+}
+
+
+.success-page p {
+    position: relative;
+    z-index: 2;
+
+    margin: 0 auto;
+
+    max-width: 650px;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    color: rgba(255,255,255,.92);
+}
+
+
+/* =====================================================
+   CONFIRMATION SECTION
+===================================================== */
+
+.confirmation {
+    max-width: 1000px;
+
+    margin: 45px auto;
+
+    padding: 45px 30px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,.08);
+}
+
+
+.confirmation h2 {
+    margin-bottom: 15px;
+
+    font-size: 30px;
+
+    color: var(--primary);
+}
+
+
+.confirmation > p {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #555;
+}
+
+
+/* =====================================================
+   NEXT STEPS
+===================================================== */
+
+.next-steps {
+    max-width: 700px;
+
+    margin: 35px auto 0;
+
+    padding: 25px;
+
+    text-align: left;
+
+    border-radius: 14px;
+
+    background: #f5f9ff;
+
+    border-left: 5px solid var(--primary);
+}
+
+
+.next-steps h3 {
+    margin: 0 0 20px;
+
+    font-size: 22px;
+
+    color: var(--primary);
+}
+
+
+.next-steps ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+
+.next-steps li {
+    padding: 13px 0;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    font-size: 15px;
+
+    color: #333;
+}
+
+
+.next-steps li:last-child {
+    border-bottom: none;
+}
+
+
+/* =====================================================
+   PAYMENT SECTION
+===================================================== */
+
+.payment-info {
+    max-width: 1000px;
+
+    margin: 45px auto;
+
+    padding: 50px 30px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #fff7ed,
+        #ffffff
+    );
+
+    box-shadow: 0 8px 30px rgba(0,0,0,.08);
+}
+
+
+.payment-info h2 {
+    margin-bottom: 10px;
+
+    font-size: 32px;
+
+    color: var(--primary);
+}
+
+
+.payment-info > p {
+    color: #555;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   PAYMENT CARD
+===================================================== */
+
+.payment-card {
+    max-width: 460px;
+
+    margin: 30px auto;
+
+    padding: 35px 25px;
+
+    border-radius: 18px;
+
+    background: linear-gradient(
+        135deg,
+        #0b6fa4,
+        var(--primary)
+    );
+
+    color: #ffffff;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.18);
+}
+
+
+.payment-card h3 {
+    margin: 0 0 10px;
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    color: rgba(255,255,255,.9);
+}
+
+
+.payment-card h1 {
+    margin: 5px 0 15px;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: #ffffff;
+}
+
+
+.payment-card p {
+    margin: 5px 0;
+
+    color: rgba(255,255,255,.85);
+}
+
+
+.payment-card h2 {
+    margin: 5px 0 0;
+
+    font-size: 30px;
+
+    letter-spacing: 1px;
+
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.success-buttons {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+    padding: 20px 20px 70px;
+}
+
+
+.success-buttons a {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 190px;
+
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition: all .3s ease;
+}
+
+
+/* Main button */
+
+.success-buttons .main-btn {
+    background: var(--primary);
+
+    color: #ffffff;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,.15);
+}
+
+
+.success-buttons .main-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.20);
+}
+
+
+/* Secondary button */
+
+.success-buttons .secondary-btn {
+    background: #ffffff;
+
+    color: var(--primary);
+
+    border: 2px solid var(--primary);
+}
+
+
+.success-buttons .secondary-btn:hover {
+    transform: translateY(-3px);
+
+    background: var(--primary);
+
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   MOBILE RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .success-page {
+        margin-top: 20px;
+
+        padding: 60px 20px;
+
+        border-radius: 0 0 20px 20px;
+    }
+
+
+    .success-page h1 {
+        font-size: 34px;
+    }
+
+
+    .success-icon {
+        width: 85px;
+        height: 85px;
+
+        font-size: 45px;
+    }
+
+
+    .confirmation,
+    .payment-info {
+        margin: 30px 15px;
+
+        padding: 35px 20px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .success-page {
+        padding: 50px 18px;
+    }
+
+
+    .success-page h1 {
+        font-size: 28px;
+    }
+
+
+    .success-page p {
+        font-size: 15px;
+    }
+
+
+    .success-icon {
+        width: 75px;
+        height: 75px;
+
+        font-size: 38px;
+    }
+
+
+    .confirmation h2,
+    .payment-info h2 {
+        font-size: 25px;
+    }
+
+
+    .next-steps {
+        padding: 20px;
+    }
+
+
+    .payment-card {
+        padding: 30px 18px;
+    }
+
+
+    .payment-card h1 {
+        font-size: 34px;
+    }
+
+
+    .payment-card h2 {
+        font-size: 25px;
+    }
+
+
+    .success-buttons {
+        flex-direction: column;
+
+        padding-bottom: 50px;
+    }
+
+
+    .success-buttons a {
+        width: 100%;
+
+        max-width: 330px;
+    }
+
+}

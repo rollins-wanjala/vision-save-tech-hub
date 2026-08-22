@@ -149,61 +149,96 @@ answer.style.display="none";
 
 
 /* =========================
-FORM SUBMISSION FEEDBACK
+FORM SUBMISSION
+FORMSPREE + SUCCESS PAGE
 ========================= */
 
+const cyberForm = document.getElementById("cyberForm");
 
-const cyberForm = document.querySelector(
+if (cyberForm) {
 
-"#cyberForm"
+    cyberForm.addEventListener("submit", async function(e) {
 
-);
+        e.preventDefault();
 
+        const button = cyberForm.querySelector(
+            'button[type="submit"]'
+        );
 
+        const originalText = button.innerHTML;
 
-if(cyberForm){
+        button.innerHTML =
+            '<i class="fas fa-spinner fa-spin"></i> Sending Request...';
 
+        button.disabled = true;
 
+        try {
 
-cyberForm.addEventListener(
+            const formData = new FormData(cyberForm);
 
-"submit",
-
-function(){
-
-
-
-const button = cyberForm.querySelector(
-
-"button"
-
-);
-
-
-
-button.innerHTML=
-
-"Sending Request...";
-
-
-
-button.style.opacity="0.7";
+            const response = await fetch(
+                cyberForm.action,
+                {
+                    method: "POST",
+                    body: formData,
+                    headers: {
+                        "Accept": "application/json"
+                    }
+                }
+            );
 
 
+            if (response.ok) {
 
-button.disabled=true;
+                /*
+                Both files are inside pages/
+
+                cyber.html
+                service-success.html
+
+                Therefore this path is correct.
+                */
+
+                window.location.href =
+                    "service-success.html";
+
+                return;
+
+            }
 
 
+            alert(
+                "Your request could not be submitted. Please try again."
+            );
 
-});
+
+            button.disabled = false;
+
+            button.innerHTML = originalText;
 
 
+        } catch (error) {
+
+            console.error(
+                "Cyber form submission error:",
+                error
+            );
+
+
+            alert(
+                "Unable to submit your request. Please check your internet connection and try again."
+            );
+
+
+            button.disabled = false;
+
+            button.innerHTML = originalText;
+
+        }
+
+    });
 
 }
-
-
-
-
 
 
 
