@@ -1370,3 +1370,114 @@ FINAL RESPONSIVE
 
 
 }
+
+/* =========================================
+   CLASS SCHEDULE
+========================================= */
+
+.schedule {
+    width: 100%;
+    overflow: hidden;
+}
+
+.schedule .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 25px;
+}
+
+
+/* TABLE */
+
+.schedule table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+
+/* HEADER */
+
+.schedule th {
+    padding: 16px 20px;
+    text-align: left;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+/* CELLS */
+
+.schedule td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+
+/* PREVENT LONG TEXT FROM BREAKING BADLY */
+
+.schedule th,
+.schedule td {
+    vertical-align: middle;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .schedule {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .schedule .container {
+        width: 100%;
+    }
+
+    .table-responsive {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .schedule table {
+        min-width: 560px;
+    }
+
+    .schedule th,
+    .schedule td {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 480px) {
+
+    .schedule {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .schedule table {
+        min-width: 520px;
+    }
+
+    .schedule th,
+    .schedule td {
+        padding: 11px 12px;
+        font-size: 13px;
+    }
+
+}

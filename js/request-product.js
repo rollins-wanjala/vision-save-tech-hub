@@ -91,99 +91,108 @@ item.classList.remove("active");
 
 
 
-/* =========================
-PRODUCT REQUEST FORM
-VALIDATION
-========================= */
+/* =========================================
+   PRODUCT REQUEST FORM
+   VISION SAVE HUB TECH
+========================================= */
+
+const productRequestForm =
+    document.getElementById("productRequestForm");
 
 
-const productForm =
-document.getElementById(
-"productRequestForm"
-);
+if (productRequestForm) {
+
+    productRequestForm.addEventListener(
+        "submit",
+        async function (e) {
+
+            e.preventDefault();
 
 
-
-if(productForm){
-
-
-
-productForm.addEventListener(
-"submit",
-function(e){
+            const button =
+                productRequestForm.querySelector(
+                    'button[type="submit"]'
+                );
 
 
-
-const name =
-document.querySelector(
-'input[name="full_name"]'
-);
+            const originalText =
+                button.innerHTML;
 
 
-
-const phone =
-document.querySelector(
-'input[name="phone"]'
-);
+            button.innerHTML =
+                '<i class="fas fa-spinner fa-spin"></i> Sending Request...';
 
 
-
-const product =
-document.querySelector(
-'input[name="product"]'
-);
+            button.disabled = true;
 
 
+            try {
 
-const category =
-document.querySelector(
-'select[name="category"]'
-);
-
+                const formData =
+                    new FormData(productRequestForm);
 
 
+                const response =
+                    await fetch(
+                        productRequestForm.action,
+                        {
+                            method: "POST",
+
+                            body: formData,
+
+                            headers: {
+                                "Accept":
+                                    "application/json"
+                            }
+                        }
+                    );
 
 
-if(
-!name.value.trim() ||
-!phone.value.trim() ||
-!product.value.trim() ||
-!category.value
-){
+                if (response.ok) {
+
+                    window.location.href =
+                        "product-success.html";
+
+                    return;
+
+                }
 
 
-
-e.preventDefault();
-
-
-
-alert(
-"Please fill in your name, phone number, product name and category."
-);
+                alert(
+                    "Your product request could not be sent. Please try again."
+                );
 
 
+                button.disabled = false;
 
-return false;
+                button.innerHTML =
+                    originalText;
 
 
+            } catch (error) {
+
+                console.error(
+                    "Product request error:",
+                    error
+                );
+
+
+                alert(
+                    "Unable to send your request. Please check your internet connection and try again."
+                );
+
+
+                button.disabled = false;
+
+                button.innerHTML =
+                    originalText;
+
+            }
+
+        }
+    );
 
 }
-
-
-
-
-
-});
-
-
-
-}
-
-
-
-
-
-
 
 
 

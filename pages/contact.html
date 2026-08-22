@@ -573,114 +573,98 @@ We are located in Gatina, Dagoretti North Sub-County, Nairobi. A live Google Map
 CONTACT FORM
 ========================= -->
 
-
 <section class="contact-form">
 
+    <h2>
+        Send Us A Message
+    </h2>
 
-<h2>
-Send Us A Message
-</h2>
+    <form
+        id="contactForm"
+        class="formspree-form"
+        action="https://formspree.io/f/mjybzlgr"
+        method="POST">
 
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Full Name"
+            required>
 
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            required>
 
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Phone Number">
 
+        <select
+            id="service"
+            name="service">
 
-<form id="contactForm"
-class="formspree-form"
-action="https://formspree.io/f/xqpzzpve"
-method="POST">
+            <option value="" selected disabled>
+                Select Service
+            </option>
 
+            <option value="Computer Packages">
+                Computer Packages
+            </option>
 
-<input
-type="text"
-id="name"
-name="name"
-placeholder="Full Name"
-required>
+            <option value="Gaming Lounge">
+                Gaming Lounge
+            </option>
 
+            <option value="Cyber Services">
+                Cyber Services
+            </option>
 
-<input
-type="email"
-id="email"
-name="email"
-placeholder="Email Address"
-required>
+            <option value="ICT Accessories">
+                ICT Accessories
+            </option>
 
+            <option value="Sponsorship">
+                Sponsorship
+            </option>
 
-<input
-type="tel"
-id="phone"
-name="phone"
-placeholder="Phone Number">
+            <option value="General Inquiry">
+                General Inquiry
+            </option>
 
+        </select>
 
-<select
-id="service"
-name="service">
+        <textarea
+            id="message"
+            name="message"
+            rows="7"
+            placeholder="Write your message here..."
+            required></textarea>
 
+        <input
+            type="hidden"
+            name="_subject"
+            value="New Contact Message - Vision Save Hub Tech">
 
-<option>
-Select Service
-</option>
+        <button
+            type="submit"
+            class="main-btn">
 
-<option>
-Computer Packages
-</option>
+            Send Message
 
-<option>
-Gaming Lounge
-</option>
+        </button>
 
-<option>
-Cyber Services
-</option>
-
-<option>
-ICT Accessories
-</option>
-
-<option>
-Sponsorship
-</option>
-
-<option>
-General Inquiry
-</option>
-
-
-</select>
-
-
-
-<textarea
-id="message"
-name="message"
-rows="7"
-placeholder="Write your message here..."
-required></textarea>
-
-
-
-<input 
-type="hidden"
-name="_subject"
-value="New Contact Message - Vision Save Hub Tech">
-
-
-
-<button type="submit" class="main-btn">
-
-Send Message
-
-</button>
-
-
-</form>
-
-
-
+    </form>
 
 </section>
+
+
+
 
 
 

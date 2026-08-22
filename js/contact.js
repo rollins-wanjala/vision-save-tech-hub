@@ -1,13 +1,89 @@
 /* =========================================
-VISION SAVE HUB TECH
+   VISION SAVE HUB TECH
 
-CONTACT PAGE JAVASCRIPT
-
-Only affects contact.html
+   CONTACT FORM JAVASCRIPT
 ========================================= */
 
+document.addEventListener("DOMContentLoaded", function () {
 
-document.addEventListener("DOMContentLoaded", function(){
+    const contactForm =
+        document.getElementById("contactForm");
+
+    if (contactForm) {
+
+        contactForm.addEventListener(
+            "submit",
+            async function (e) {
+
+                e.preventDefault();
+
+                const button =
+                    contactForm.querySelector(
+                        'button[type="submit"]'
+                    );
+
+                const originalText =
+                    button.innerHTML;
+
+                button.innerHTML =
+                    '<i class="fas fa-spinner fa-spin"></i> Sending Message...';
+
+                button.disabled = true;
+
+                try {
+
+                    const formData =
+                        new FormData(contactForm);
+
+                    const response =
+                        await fetch(
+                            contactForm.action,
+                            {
+                                method: "POST",
+                                body: formData,
+                                headers: {
+                                    "Accept":
+                                        "application/json"
+                                }
+                            }
+                        );
+
+                    if (response.ok) {
+
+                        window.location.href =
+                            "contact-success.html";
+
+                        return;
+                    }
+
+                    alert(
+                        "Your message could not be sent. Please try again."
+                    );
+
+                    button.disabled = false;
+                    button.innerHTML = originalText;
+
+                } catch (error) {
+
+                    console.error(
+                        "Contact form error:",
+                        error
+                    );
+
+                    alert(
+                        "Unable to send your message. Please check your internet connection and try again."
+                    );
+
+                    button.disabled = false;
+                    button.innerHTML = originalText;
+                }
+
+            }
+        );
+
+    }
+
+});
 
 
 
@@ -188,7 +264,3 @@ buttons.forEach(button=>{
 
 
 
-
-
-
-});

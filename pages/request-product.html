@@ -513,243 +513,148 @@ Flash disks, hard drives and memory cards.
 PRODUCT REQUEST FORM
 ========================= -->
 
-
 <section class="product-request-form">
 
+    <h2>
+        Submit Product Request
+    </h2>
 
 
-<h2>
-Submit Product Request
-</h2>
+    <p>
+        Tell us what product you are looking for and our team
+        will contact you with availability and pricing.
+    </p>
 
 
+    <form
+        id="productRequestForm"
+        class="formspree-form"
+        action="https://formspree.io/f/mqpzjnwl"
+        method="POST">
 
 
+        <!-- EMAIL SUBJECT -->
 
-<form id="productRequestForm"
-class="formspree-form"
-action="https://formspree.io/f/xqpzzpve"
-method="POST">
+        <input
+            type="hidden"
+            name="_subject"
+            value="New ICT Product Request - Vision Save Hub Tech">
 
 
+        <!-- CUSTOMER DETAILS -->
 
+        <div class="form-row">
 
+            <input
+                type="text"
+                name="full_name"
+                placeholder="Full Name"
+                required>
 
 
-<input
+            <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                required>
 
-type="hidden"
+        </div>
 
-name="_subject"
 
-value="New ICT Product Request - Vision Save Hub Tech">
+        <!-- PRODUCT DETAILS -->
 
+        <div class="form-row">
 
+            <input
+                type="email"
+                name="email"
+                placeholder="Email Address">
 
 
+            <input
+                type="text"
+                name="product"
+                placeholder="Product Name"
+                required>
 
+        </div>
 
 
+        <!-- CATEGORY -->
 
-<div class="form-row">
+        <select
+            name="category"
+            required>
 
+            <option value="" selected disabled>
+                Select Product Category
+            </option>
 
+            <option value="Laptop">
+                Laptop
+            </option>
 
-<input
+            <option value="Printer">
+                Printer
+            </option>
 
-type="text"
+            <option value="Phone Accessory">
+                Phone Accessory
+            </option>
 
-name="full_name"
+            <option value="Networking Equipment">
+                Networking Equipment
+            </option>
 
-placeholder="Full Name"
+            <option value="Computer Accessory">
+                Computer Accessory
+            </option>
 
-required>
+            <option value="Storage Device">
+                Storage Device
+            </option>
 
+            <option value="Other">
+                Other
+            </option>
 
+        </select>
 
 
+        <!-- QUANTITY -->
 
-<input
+        <input
+            type="number"
+            name="quantity"
+            placeholder="Quantity"
+            min="1">
 
-type="tel"
 
-name="phone"
+        <!-- ADDITIONAL DETAILS -->
 
-placeholder="Phone Number"
+        <textarea
+            name="details"
+            rows="6"
+            placeholder="Additional Details (Model, Brand, Budget etc.)"></textarea>
 
-required>
 
+        <!-- SUBMIT -->
 
+        <button
+            type="submit"
+            class="main-btn">
 
-</div>
+            Submit Request
 
+        </button>
 
-
-
-
-
-
-
-<div class="form-row">
-
-
-
-<input
-
-type="email"
-
-name="email"
-
-placeholder="Email Address">
-
-
-
-
-
-<input
-
-type="text"
-
-name="product"
-
-placeholder="Product Name"
-
-required>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-<select
-
-name="category"
-
-required>
-
-
-<option value="">
-
-Select Product Category
-
-</option>
-
-
-
-<option>
-Laptop
-</option>
-
-
-
-<option>
-Printer
-</option>
-
-
-
-<option>
-Phone Accessory
-</option>
-
-
-
-<option>
-Networking Equipment
-</option>
-
-
-
-<option>
-Computer Accessory
-</option>
-
-
-
-<option>
-Storage Device
-</option>
-
-
-
-<option>
-Other
-</option>
-
-
-
-</select>
-
-
-
-
-
-
-
-
-<input
-
-type="number"
-
-name="quantity"
-
-placeholder="Quantity"
-
-min="1">
-
-
-
-
-
-
-
-<textarea
-
-name="details"
-
-rows="6"
-
-placeholder="Additional Details (Model, Brand, Budget etc.)">
-
-</textarea>
-
-
-
-
-
-
-
-<button
-
-type="submit"
-
-class="main-btn">
-
-
-Submit Request
-
-
-</button>
-
-
-
-
-
-
-</form>
-
-
-
-
-
+    </form>
 
 </section>
+
+
+
+
 
 
 

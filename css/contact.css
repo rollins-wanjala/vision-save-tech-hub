@@ -1660,3 +1660,93 @@ to{
 
 
 }
+
+/* =========================================
+   BUSINESS HOURS TABLE
+========================================= */
+
+.hours {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hours-table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 20px;
+}
+
+.hours table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 450px;
+}
+
+.hours th,
+.hours td {
+    padding: 14px 18px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.hours th {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.hours td {
+    line-height: 1.5;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    .hours {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hours-table-responsive {
+        width: 100%;
+    }
+
+    .hours table {
+        min-width: 450px;
+    }
+
+    .hours th,
+    .hours td {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 480px) {
+
+    .hours {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .hours table {
+        min-width: 420px;
+    }
+
+    .hours th,
+    .hours td {
+        padding: 11px 12px;
+        font-size: 13px;
+    }
+
+}

@@ -875,3 +875,93 @@ RESPONSIVE
 }
 
 }
+
+/* =========================================
+   GAMING PRICES TABLE
+========================================= */
+
+.pricing {
+    width: 100%;
+    overflow: hidden;
+}
+
+.pricing-table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 20px;
+}
+
+.pricing table {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+}
+
+.pricing th,
+.pricing td {
+    padding: 15px 20px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.pricing th {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.pricing td {
+    line-height: 1.5;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    .pricing {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .pricing-table-responsive {
+        width: 100%;
+    }
+
+    .pricing table {
+        min-width: 480px;
+    }
+
+    .pricing th,
+    .pricing td {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 480px) {
+
+    .pricing {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .pricing table {
+        min-width: 450px;
+    }
+
+    .pricing th,
+    .pricing td {
+        padding: 11px 12px;
+        font-size: 13px;
+    }
+
+}
