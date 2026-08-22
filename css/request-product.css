@@ -1,0 +1,2163 @@
+/* =========================================
+
+VISION SAVE HUB TECH
+
+REQUEST PRODUCT PAGE CSS
+
+PART 1:
+Banner
+Introduction
+Product Categories
+
+========================================= */
+
+
+
+
+
+
+
+/* =========================
+PAGE BODY
+========================= */
+
+
+.request-product-page{
+
+
+    background:#ffffff;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+REQUEST PRODUCT BANNER
+========================= */
+
+
+.request-product-banner{
+
+
+    min-height:430px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    text-align:center;
+
+
+    color:white;
+
+
+    background:
+
+
+    linear-gradient(
+
+    rgba(11,61,145,.85),
+
+    rgba(7,29,73,.85)
+
+    ),
+
+    url("../images/products/shop-banner.jpg");
+
+
+
+    background-size:cover;
+
+
+    background-position:center;
+
+
+}
+
+
+
+
+
+
+
+.request-product-banner h1{
+
+
+    font-size:55px;
+
+
+    font-weight:800;
+
+
+    margin-bottom:20px;
+
+
+    animation:requestFadeDown 1s ease;
+
+
+}
+
+
+
+
+
+
+.request-product-banner p{
+
+
+    font-size:22px;
+
+
+    animation:requestFade 1.5s ease;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+INTRO SECTION
+========================= */
+
+
+.request-intro{
+
+
+    padding:90px 8%;
+
+
+    display:grid;
+
+
+    grid-template-columns:1fr 1fr;
+
+
+    gap:60px;
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+
+.request-image img{
+
+
+    width:100%;
+
+
+    height:430px;
+
+
+    object-fit:cover;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+
+    0 20px 45px rgba(0,0,0,.15);
+
+
+    animation:productFloat 4s infinite ease-in-out;
+
+
+}
+
+
+
+
+
+
+.request-text span{
+
+
+    display:inline-block;
+
+
+    background:#ff9800;
+
+
+    color:white;
+
+
+    padding:8px 25px;
+
+
+    border-radius:30px;
+
+
+    font-weight:700;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.request-text h2{
+
+
+    font-size:42px;
+
+
+    color:#0b3d91;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.request-text p{
+
+
+    color:#555;
+
+
+    line-height:1.8;
+
+
+    font-size:17px;
+
+
+    margin-bottom:18px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+PRODUCT CATEGORIES
+========================= */
+
+
+.product-categories{
+
+
+    padding:90px 8%;
+
+
+    background:#f8fbff;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+.product-categories h2{
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+
+
+
+.category-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(3,1fr);
+
+
+    gap:30px;
+
+
+}
+
+
+
+
+
+
+.category-card{
+
+
+    background:white;
+
+
+    padding:40px 25px;
+
+
+    border-radius:22px;
+
+
+    box-shadow:
+
+
+    0 15px 35px rgba(0,0,0,.08);
+
+
+    transition:.4s;
+
+
+    border-bottom:5px solid #ff9800;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+
+.category-card::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:0;
+
+
+    height:0;
+
+
+    background:#0b3d91;
+
+
+    border-radius:50%;
+
+
+    top:50%;
+
+
+    left:50%;
+
+
+    transform:translate(-50%,-50%);
+
+
+    transition:.5s;
+
+
+    z-index:0;
+
+
+}
+
+
+
+
+
+
+.category-card:hover::before{
+
+
+    width:300px;
+
+
+    height:300px;
+
+
+}
+
+
+
+
+
+
+.category-card:hover{
+
+
+    transform:translateY(-12px);
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+.category-card i,
+
+
+.category-card h3,
+
+
+.category-card p{
+
+
+    position:relative;
+
+
+    z-index:1;
+
+
+}
+
+
+
+
+
+
+.category-card i{
+
+
+    font-size:45px;
+
+
+    color:#ff9800;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.category-card h3{
+
+
+    color:#0b3d91;
+
+
+    font-size:23px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+
+.category-card p{
+
+
+    color:#666;
+
+
+    line-height:1.7;
+
+
+}
+
+
+
+
+
+
+.category-card:hover h3,
+
+
+.category-card:hover p,
+
+
+.category-card:hover i{
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+ANIMATIONS
+========================= */
+
+
+@keyframes requestFadeDown{
+
+
+from{
+
+
+opacity:0;
+
+
+transform:translateY(-50px);
+
+
+}
+
+
+
+to{
+
+
+opacity:1;
+
+
+transform:translateY(0);
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+@keyframes requestFade{
+
+
+from{
+
+
+opacity:0;
+
+
+}
+
+
+
+to{
+
+
+opacity:1;
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+@keyframes productFloat{
+
+
+0%,100%{
+
+
+transform:translateY(0);
+
+
+}
+
+
+
+50%{
+
+
+transform:translateY(-12px);
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+RESPONSIVE DESIGN
+========================= */
+
+
+@media(max-width:1000px){
+
+
+
+.request-intro{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+
+.category-grid{
+
+
+grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+@media(max-width:600px){
+
+
+
+.request-product-banner h1{
+
+
+font-size:35px;
+
+
+}
+
+
+
+
+.request-product-banner p{
+
+
+font-size:17px;
+
+
+}
+
+
+
+
+.request-text h2,
+
+
+.product-categories h2{
+
+
+font-size:32px;
+
+
+}
+
+
+
+
+.request-image img{
+
+
+height:300px;
+
+
+}
+
+
+
+
+.category-grid{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+}
+/* =========================================
+
+REQUEST PRODUCT PAGE CSS
+
+PART 2:
+Form
+How It Works
+WhatsApp Order
+Booking
+
+========================================= */
+
+
+
+
+
+
+
+/* =========================
+PRODUCT REQUEST FORM
+========================= */
+
+
+.product-request-form{
+
+
+    padding:90px 8%;
+
+
+    background:white;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+.product-request-form h2{
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:45px;
+
+
+}
+
+
+
+
+
+
+.product-request-form form{
+
+
+    max-width:950px;
+
+
+    margin:auto;
+
+
+}
+
+
+
+
+
+
+.product-request-form .form-row{
+
+
+    display:grid;
+
+
+    grid-template-columns:1fr 1fr;
+
+
+    gap:25px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.product-request-form input,
+
+
+.product-request-form select,
+
+
+.product-request-form textarea{
+
+
+    width:100%;
+
+
+    padding:17px;
+
+
+    border:1px solid #ddd;
+
+
+    border-radius:12px;
+
+
+    outline:none;
+
+
+    font-family:'Poppins',sans-serif;
+
+
+    font-size:15px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.product-request-form input:focus,
+
+
+.product-request-form select:focus,
+
+
+.product-request-form textarea:focus{
+
+
+    border-color:#0b3d91;
+
+
+    box-shadow:
+
+    0 0 12px rgba(11,61,145,.18);
+
+
+}
+
+
+
+
+
+
+.product-request-form select{
+
+
+    margin-bottom:20px;
+
+
+    background:white;
+
+
+}
+
+
+
+
+
+
+.product-request-form textarea{
+
+
+    resize:none;
+
+
+}
+
+
+
+
+
+
+.product-request-form .main-btn{
+
+
+    margin-top:30px;
+
+
+    border:none;
+
+
+    cursor:pointer;
+
+
+    background:#ff9800;
+
+
+    color:white;
+
+
+    padding:16px 45px;
+
+
+    border-radius:40px;
+
+
+    font-weight:700;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.product-request-form .main-btn:hover{
+
+
+    background:#0b3d91;
+
+
+    transform:translateY(-5px);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+HOW IT WORKS SECTION
+========================= */
+
+
+.how-request-works{
+
+
+    padding:90px 8%;
+
+
+    background:#f8fbff;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+.how-request-works h2{
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+
+
+
+.process-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(4,1fr);
+
+
+    gap:30px;
+
+
+}
+
+
+
+
+
+
+.process-card{
+
+
+    background:white;
+
+
+    padding:35px 25px;
+
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+
+    0 15px 35px rgba(0,0,0,.08);
+
+
+    transition:.4s;
+
+
+    position:relative;
+
+
+}
+
+
+
+
+
+
+.process-card:hover{
+
+
+    transform:translateY(-12px);
+
+
+    box-shadow:
+
+
+    0 25px 45px rgba(0,0,0,.15);
+
+
+}
+
+
+
+
+
+
+.process-card i{
+
+
+    width:80px;
+
+
+    height:80px;
+
+
+    border-radius:50%;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    margin:0 auto 20px;
+
+
+    background:#0b3d91;
+
+
+    color:white;
+
+
+    font-size:35px;
+
+
+}
+
+
+
+
+
+
+.process-card h3{
+
+
+    color:#ff9800;
+
+
+    margin-bottom:15px;
+
+
+    font-size:22px;
+
+
+}
+
+
+
+
+
+
+.process-card p{
+
+
+    color:#666;
+
+
+    line-height:1.7;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+WHATSAPP ORDER SECTION
+========================= */
+
+
+.whatsapp-order{
+
+
+    padding:80px 8%;
+
+
+    text-align:center;
+
+
+    background:
+
+
+    linear-gradient(
+
+    135deg,
+
+    #25D366,
+
+    #128C7E
+
+    );
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+.whatsapp-order h2{
+
+
+    font-size:40px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.whatsapp-order p{
+
+
+    font-size:18px;
+
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+
+
+
+.whatsapp-btn{
+
+
+    display:inline-flex;
+
+
+    align-items:center;
+
+
+    gap:12px;
+
+
+    background:white;
+
+
+    color:#128C7E;
+
+
+    padding:17px 40px;
+
+
+    border-radius:40px;
+
+
+    font-weight:700;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.whatsapp-btn i{
+
+
+    font-size:25px;
+
+
+}
+
+
+
+
+
+
+.whatsapp-btn:hover{
+
+
+    transform:translateY(-6px);
+
+
+    background:#0b3d91;
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+BOOKING SECTION
+========================= */
+
+
+.booking{
+
+
+    padding:85px 8%;
+
+
+    text-align:center;
+
+
+    background:white;
+
+
+}
+
+
+
+
+
+
+.booking h2{
+
+
+    color:#0b3d91;
+
+
+    font-size:40px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.booking p{
+
+
+    max-width:750px;
+
+
+    margin:0 auto 35px;
+
+
+    color:#555;
+
+
+    line-height:1.8;
+
+
+    font-size:17px;
+
+
+}
+
+
+
+
+
+
+.booking .main-btn{
+
+
+    display:inline-block;
+
+
+    background:#ff9800;
+
+
+    color:white;
+
+
+    padding:16px 45px;
+
+
+    border-radius:40px;
+
+
+    font-weight:700;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.booking .main-btn:hover{
+
+
+    background:#0b3d91;
+
+
+    transform:translateY(-5px);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+MOBILE RESPONSIVE
+========================= */
+
+
+@media(max-width:1000px){
+
+
+
+.process-grid{
+
+
+grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+@media(max-width:700px){
+
+
+
+.product-request-form,
+
+
+.how-request-works,
+
+
+.whatsapp-order,
+
+
+.booking{
+
+
+padding:60px 5%;
+
+
+}
+
+
+
+
+
+.product-request-form h2,
+
+
+.how-request-works h2{
+
+
+font-size:32px;
+
+
+}
+
+
+
+
+
+.product-request-form .form-row{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+
+
+.process-grid{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+
+
+.whatsapp-order h2,
+
+
+.booking h2{
+
+
+font-size:30px;
+
+
+}
+
+
+
+
+
+.whatsapp-btn,
+
+
+.booking .main-btn{
+
+
+padding:15px 30px;
+
+
+}
+
+
+
+}
+/* =========================================
+
+REQUEST PRODUCT PAGE CSS
+
+PART 3:
+FAQ
+CTA
+Footer
+WhatsApp
+Final Polish
+
+========================================= */
+
+
+
+
+
+
+
+/* =========================
+FAQ SECTION
+========================= */
+
+
+.request-faq{
+
+
+    padding:90px 8%;
+
+
+    background:#f8fbff;
+
+
+}
+
+
+
+
+
+
+.request-faq h2{
+
+
+    text-align:center;
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+
+
+
+.request-faq .faq-item{
+
+
+    max-width:900px;
+
+
+    margin:20px auto;
+
+
+    padding:30px;
+
+
+    background:white;
+
+
+    border-radius:18px;
+
+
+    border-left:6px solid #ff9800;
+
+
+    box-shadow:
+
+
+    0 10px 30px rgba(0,0,0,.08);
+
+
+    transition:.4s;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+.request-faq .faq-item:hover{
+
+
+    transform:translateX(10px);
+
+
+    box-shadow:
+
+
+    0 20px 40px rgba(0,0,0,.12);
+
+
+}
+
+
+
+
+
+
+.request-faq .faq-item h3{
+
+
+    color:#0b3d91;
+
+
+    font-size:22px;
+
+
+    margin-bottom:12px;
+
+
+}
+
+
+
+
+
+
+.request-faq .faq-item p{
+
+
+    color:#666;
+
+
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+FINAL CTA SECTION
+========================= */
+
+
+.request-cta{
+
+
+    padding:90px 8%;
+
+
+    text-align:center;
+
+
+    color:white;
+
+
+    background:
+
+
+    linear-gradient(
+
+    135deg,
+
+    #0b3d91,
+
+    #071d49
+
+    );
+
+
+}
+
+
+
+
+
+
+.request-cta h2{
+
+
+    font-size:45px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.request-cta p{
+
+
+    max-width:800px;
+
+
+    margin:0 auto 35px;
+
+
+    font-size:18px;
+
+
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+
+.request-cta .main-btn{
+
+
+    display:inline-block;
+
+
+    background:#ff9800;
+
+
+    color:white;
+
+
+    padding:17px 45px;
+
+
+    border-radius:40px;
+
+
+    font-weight:700;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.request-cta .main-btn:hover{
+
+
+    background:white;
+
+
+    color:#0b3d91;
+
+
+    transform:translateY(-6px);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+FOOTER FIXES
+========================= */
+
+
+.request-product-page .footer{
+
+
+    margin-top:0;
+
+
+}
+
+
+
+
+
+
+.request-product-page .footer-column{
+
+
+    animation:footerAppear .8s ease;
+
+
+}
+
+
+
+
+
+
+@keyframes footerAppear{
+
+
+from{
+
+
+opacity:0;
+
+
+transform:translateY(20px);
+
+
+}
+
+
+
+to{
+
+
+opacity:1;
+
+
+transform:translateY(0);
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+FLOATING WHATSAPP
+========================= */
+
+
+.request-product-page .whatsapp-float{
+
+
+    position:fixed;
+
+
+    right:25px;
+
+
+    bottom:25px;
+
+
+    width:60px;
+
+
+    height:60px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    background:#25D366;
+
+
+    color:white;
+
+
+    border-radius:50%;
+
+
+    font-size:32px;
+
+
+    z-index:999;
+
+
+    box-shadow:
+
+
+    0 10px 30px rgba(0,0,0,.25);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.request-product-page .whatsapp-float:hover{
+
+
+    transform:scale(1.15);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+SCROLL ANIMATION
+========================= */
+
+
+.request-product-page section{
+
+
+    animation:sectionReveal .8s ease;
+
+
+}
+
+
+
+
+
+
+@keyframes sectionReveal{
+
+
+from{
+
+
+opacity:0;
+
+
+transform:translateY(30px);
+
+
+}
+
+
+
+to{
+
+
+opacity:1;
+
+
+transform:translateY(0);
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+FINAL MOBILE POLISH
+========================= */
+
+
+@media(max-width:700px){
+
+
+
+.request-faq,
+
+
+.request-cta{
+
+
+padding:60px 5%;
+
+
+}
+
+
+
+
+
+.request-faq h2{
+
+
+font-size:32px;
+
+
+}
+
+
+
+
+
+.request-faq .faq-item{
+
+
+padding:22px;
+
+
+}
+
+
+
+
+
+.request-faq .faq-item h3{
+
+
+font-size:18px;
+
+
+}
+
+
+
+
+
+.request-cta h2{
+
+
+font-size:32px;
+
+
+}
+
+
+
+
+
+.request-cta p{
+
+
+font-size:16px;
+
+
+}
+
+
+
+
+
+.request-product-page .whatsapp-float{
+
+
+width:55px;
+
+
+height:55px;
+
+
+font-size:28px;
+
+
+}
+
+
+
+}

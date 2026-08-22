@@ -1,0 +1,877 @@
+/* =========================================
+VISION SAVE HUB TECH
+
+GAMING PAGE CSS
+
+PART 1
+
+- Banner
+- Introduction
+- Consoles
+- Popular Games
+
+========================================= */
+
+
+
+
+
+/* =========================
+GAMING BANNER
+========================= */
+
+.gaming-banner{
+
+    background:
+    linear-gradient(rgba(7,29,73,.75),rgba(7,29,73,.75)),
+    url("../images/banners/gaming-banner.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    min-height:450px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    position:relative;
+
+}
+
+
+
+.gaming-banner .banner-content{
+
+    text-align:center;
+
+    color:#fff;
+
+    z-index:2;
+
+}
+
+
+
+.gaming-banner h1{
+
+    font-size:52px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.gaming-banner p{
+
+    font-size:22px;
+
+    font-weight:500;
+
+}
+
+
+
+
+
+
+
+/* =========================
+INTRODUCTION
+========================= */
+
+.gaming-intro{
+
+    padding:90px 5%;
+
+}
+
+
+
+.gaming-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+
+
+.gaming-image img{
+
+    width:100%;
+
+    height:500px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+
+
+.gaming-text span{
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+
+
+.gaming-text h2{
+
+    color:var(--primary);
+
+    font-size:42px;
+
+    margin:20px 0;
+
+}
+
+
+
+.gaming-text p{
+
+    line-height:1.9;
+
+    color:#555;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+AVAILABLE CONSOLES
+========================= */
+
+.consoles{
+
+    padding:90px 5%;
+
+    background:#f8fbff;
+
+}
+
+
+
+.console-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+    margin-top:50px;
+
+}
+
+
+
+.console-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+
+
+.console-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.console-card img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+}
+
+
+
+.console-card h3{
+
+    color:var(--primary);
+
+    margin:25px 0 15px;
+
+    font-size:28px;
+
+}
+
+
+
+.console-card p{
+
+    padding:0 25px 30px;
+
+    line-height:1.8;
+
+    color:#666;
+
+}
+
+
+
+
+
+
+
+/* =========================
+POPULAR GAMES
+========================= */
+
+.games{
+
+    padding:90px 5%;
+
+}
+
+
+
+.games-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+
+
+.game-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+
+
+.game-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.game-card img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+}
+
+
+
+.game-card h3{
+
+    padding:20px;
+
+    color:var(--primary);
+
+    font-size:22px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:1000px){
+
+.gaming-wrapper{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.console-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.games-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+
+@media(max-width:600px){
+
+.gaming-banner h1{
+
+    font-size:34px;
+
+}
+
+
+
+.gaming-banner p{
+
+    font-size:17px;
+
+}
+
+
+
+.gaming-text h2{
+
+    font-size:30px;
+
+}
+
+
+
+.gaming-image img{
+
+    height:320px;
+
+}
+
+
+
+.games-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+/* =========================================
+VISION SAVE HUB TECH
+
+GAMING PAGE CSS
+
+PART 2
+
+- Pricing
+- Tournaments
+- Rules
+- Gallery
+- Booking
+- FAQ
+
+========================================= */
+
+
+
+
+
+/* =========================
+SECTION HEADINGS
+========================= */
+
+.pricing h2,
+.tournaments h2,
+.rules h2,
+.gallery h2,
+.booking h2,
+.faq h2{
+
+    text-align:center;
+
+    font-size:40px;
+
+    color:var(--primary);
+
+    margin-bottom:45px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+PRICING
+========================= */
+
+.pricing{
+
+    padding:90px 5%;
+
+    background:#f8fbff;
+
+}
+
+
+
+.pricing table{
+
+    width:100%;
+
+    max-width:900px;
+
+    margin:auto;
+
+    border-collapse:collapse;
+
+    overflow:hidden;
+
+    border-radius:15px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+.pricing th{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    padding:20px;
+
+    font-size:18px;
+
+}
+
+
+
+.pricing td{
+
+    padding:18px;
+
+    border-bottom:1px solid #eee;
+
+    text-align:center;
+
+    background:#fff;
+
+}
+
+
+
+.pricing tr:hover td{
+
+    background:#f3f8ff;
+
+}
+
+
+
+
+
+
+
+/* =========================
+TOURNAMENTS
+========================= */
+
+.tournaments{
+
+    padding:90px 5%;
+
+}
+
+
+
+.tournament-card{
+
+    max-width:900px;
+
+    margin:25px auto;
+
+    background:#fff;
+
+    padding:35px;
+
+    border-left:6px solid var(--secondary);
+
+    border-radius:15px;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+
+.tournament-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.tournament-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+    font-size:28px;
+
+}
+
+
+
+.tournament-card p{
+
+    line-height:1.8;
+
+    color:#666;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.tournament-card a{
+
+    display:inline-block;
+
+    background:var(--secondary);
+
+    color:#fff;
+
+    padding:12px 28px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+
+
+/* =========================
+RULES
+========================= */
+
+.rules{
+
+    padding:90px 5%;
+
+    background:#f8fbff;
+
+}
+
+
+
+.rules ul{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+
+.rules li{
+
+    background:#fff;
+
+    margin-bottom:15px;
+
+    padding:18px 25px;
+
+    border-left:5px solid var(--accent);
+
+    border-radius:10px;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.06);
+
+}
+
+
+
+
+
+
+
+/* =========================
+GALLERY
+========================= */
+
+.gallery{
+
+    padding:90px 5%;
+
+}
+
+
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+
+.gallery-grid img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+
+
+.gallery-grid img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+
+
+/* =========================
+BOOKING
+========================= */
+
+.booking{
+
+    padding:90px 5%;
+
+    background:linear-gradient(rgba(164, 49, 161, 0.92),rgba(11,61,145,.92)),
+    url("../images/banners/gaming-cta.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    text-align:center;
+
+    color:#fff;
+
+}
+
+
+
+.booking p{
+    color:#fff;
+    max-width:700px;
+
+    margin:0 auto 35px;
+
+    line-height:1.9;
+
+    font-size:18px;
+
+}
+
+
+
+.booking .main-btn{
+
+    margin-top:10px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+FAQ
+========================= */
+
+.faq{
+
+    padding:90px 5%;
+
+}
+
+
+
+.faq-item{
+
+    max-width:900px;
+
+    margin:20px auto;
+
+    background:#fff;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+.faq-item h3{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+
+
+.faq-item p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+.gallery-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+
+@media(max-width:600px){
+
+.pricing h2,
+.tournaments h2,
+.rules h2,
+.gallery h2,
+.booking h2,
+.faq h2{
+
+    font-size:30px;
+
+}
+
+
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.pricing{
+
+    overflow-x:auto;
+
+}
+
+
+
+.pricing table{
+
+    min-width:600px;
+
+}
+
+}

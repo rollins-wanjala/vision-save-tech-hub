@@ -1,0 +1,856 @@
+/* =========================================
+VISION SAVE HUB TECH
+
+INDEX PAGE CSS ONLY
+
+Homepage sections:
+Hero
+Statistics
+Founder
+Services
+CTA
+Community Impact
+
+========================================= */
+
+
+/* =========================
+HERO SECTION
+========================= */
+
+
+.hero{
+
+    min-height:90vh;
+
+    background:url("../images/banners/hero-bg.jpg") center/cover no-repeat;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(7,29,73,0.75);
+
+}
+
+
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+    padding:40px 20px;
+
+}
+
+
+
+.welcome-text{
+
+    color:#ff9800;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:55px;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.hero h2{
+
+    font-size:28px;
+
+    margin-bottom:25px;
+
+    font-weight:500;
+
+}
+
+
+
+.hero-description{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    max-width:750px;
+
+    margin:auto;
+
+}
+
+
+
+
+/* =========================
+HERO BUTTONS
+========================= */
+
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-top:35px;
+
+}
+
+
+
+.hero-buttons a{
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.btn-primary{
+
+    background:#ff9800;
+
+    color:white;
+
+}
+
+
+
+.btn-secondary{
+
+    background:#00b894;
+
+    color:white;
+
+}
+
+
+
+.btn-outline{
+    background:#35a6d7;
+    border:2px solid white;
+
+    color:white;
+
+}
+
+
+
+.btn-dark{
+
+    background:#6dc545;
+
+    color:white;
+
+}
+
+
+
+.hero-buttons a:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+
+
+/* =========================
+STATISTICS SECTION
+========================= */
+
+
+.stats{
+
+    padding:70px 5%;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    background:#f8fbff;
+
+}
+
+
+
+.stat-box{
+
+    background:white;
+
+    padding:35px 20px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+.stat-box h2{
+
+    font-size:45px;
+
+    color:#0b3d91;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.stat-box p{
+
+    color:#666;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+
+/* =========================
+FOUNDER SECTION
+========================= */
+
+
+.founder{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+    padding:80px 5%;
+
+}
+
+
+
+.founder-image img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    object-fit:cover;
+
+}
+
+
+
+.founder-text span{
+
+    color:#ff9800;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+
+
+.founder-text h2{
+
+    color:#0b3d91;
+
+    font-size:40px;
+
+    margin:15px 0;
+
+}
+
+
+
+.founder-text h4{
+
+    color:#777;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.founder-text p{
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.story-btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#0b3d91;
+
+    color:white;
+
+    padding:14px 30px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+
+
+/* =========================
+SERVICES SECTION
+========================= */
+
+
+.services{
+
+    padding:80px 5%;
+
+    background:#f8fbff;
+
+}
+
+
+
+.service-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.service-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.service-image img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+
+
+.service-content{
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+
+
+.service-content i{
+
+    font-size:35px;
+
+    color:#ff9800;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.service-content h3{
+
+    color:#0b3d91;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.service-content p{
+
+    line-height:1.7;
+
+    color:#666;
+
+}
+
+
+
+.service-content a{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    color:#0b3d91;
+
+    font-weight:700;
+
+}
+
+
+
+
+
+
+
+/* =========================
+CTA SECTION
+========================= */
+
+
+.cta{
+
+    background:url("../images/banners/cta-bg\ \(1\).jpg") center/cover no-repeat;
+
+    padding:80px 5%;
+
+    text-align:center;
+
+    position:relative;
+
+    color:white;
+
+}
+
+
+
+.cta::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(11,61,145,.8);
+
+}
+
+
+
+.cta-content{
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+
+
+.cta h2{
+
+    font-size:42px;
+    color:#ff9800;
+    margin-bottom:20px;
+
+}
+
+
+
+.cta p{
+
+    max-width:800px;
+
+    margin:auto;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.cta-btn{
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    background:#ff9800;
+
+    color:white;
+
+    border-radius:8px;
+
+    margin:10px;
+
+    font-weight:600;
+
+}
+
+
+
+.cta-btn.outline{
+
+    background:#b42cbd;
+
+    border:2px solid white;
+
+}
+
+
+
+
+
+
+
+/* =========================
+COMMUNITY IMPACT
+========================= */
+
+
+.impact{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    padding:80px 5%;
+
+}
+
+
+
+.impact-left span{
+
+    color:#ff9800;
+
+    font-weight:700;
+
+}
+
+
+
+.impact-left h2{
+
+    color:#0b3d91;
+
+    font-size:40px;
+
+    margin:15px 0;
+
+}
+
+
+
+.impact-left p{
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.impact-left blockquote{
+
+    margin:25px 0;
+
+    padding:20px;
+
+    background:#f8fbff;
+
+    border-left:5px solid #ff9800;
+
+    font-style:italic;
+
+}
+
+
+
+.impact-btn{
+
+    display:inline-block;
+
+    background:#0b3d91;
+
+    color:white;
+
+    padding:14px 30px;
+
+    border-radius:8px;
+
+}
+
+
+
+.impact-right{
+
+    display:grid;
+
+    gap:20px;
+
+}
+
+
+
+.impact-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+.impact-card i{
+
+    font-size:35px;
+
+    color:#ff9800;
+
+}
+
+
+
+.impact-card h3{
+
+    color:#0b3d91;
+
+    margin:15px 0;
+
+}
+
+
+
+.impact-card p{
+
+    color:#666;
+
+}
+
+
+
+
+
+
+/* =========================
+RESPONSIVE DESIGN
+========================= */
+
+
+@media(max-width:1000px){
+
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+
+.stats{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.service-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.founder,
+.impact{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.hero h1{
+
+    font-size:32px;
+
+}
+
+
+
+.hero h2{
+
+    font-size:22px;
+
+}
+
+
+
+.stats{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.service-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.hero-buttons a{
+
+    width:100%;
+
+}
+
+
+
+.founder-text h2,
+.impact-left h2{
+
+    font-size:30px;
+
+}
+
+
+
+}
+.hero{
+
+animation:heroZoom 12s infinite alternate;
+
+}
+
+
+@keyframes heroZoom{
+
+
+from{
+
+background-size:100%;
+
+}
+
+
+to{
+
+background-size:110%;
+
+}
+
+
+}

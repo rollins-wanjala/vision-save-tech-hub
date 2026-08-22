@@ -1,0 +1,1998 @@
+/* =========================================
+VISION SAVE HUB TECH
+
+TOURNAMENT REGISTRATION CSS
+
+PART 1:
+Banner
+Introduction
+Tournament Cards
+Animations
+========================================= */
+
+
+
+/* =========================
+PAGE BODY
+========================= */
+
+
+.tournament-page{
+
+    background:#ffffff;
+
+}
+
+
+
+
+
+
+
+/* =========================
+TOURNAMENT BANNER
+========================= */
+
+
+.tournament-banner{
+
+
+    background:
+
+    linear-gradient(
+
+    rgba(7,29,73,.85),
+
+    rgba(11,61,145,.85)
+
+    ),
+
+    url("../images/gaming/tournament-banner.jpg");
+
+
+
+    background-size:cover;
+
+
+    background-position:center;
+
+
+    min-height:450px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    text-align:center;
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+.tournament-banner h1{
+
+
+    font-size:55px;
+
+
+    font-weight:800;
+
+
+    margin-bottom:20px;
+
+
+    animation:tournamentSlide 1s ease;
+
+
+}
+
+
+
+
+
+
+.tournament-banner p{
+
+
+    font-size:22px;
+
+
+    font-weight:500;
+
+
+    animation:tournamentFade 1.5s ease;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+INTRO SECTION
+IMAGE + TEXT
+========================= */
+
+
+.tournament-intro{
+
+
+    padding:90px 8%;
+
+
+    display:grid;
+
+
+    grid-template-columns:1fr 1fr;
+
+
+    gap:60px;
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+
+.intro-image img{
+
+
+    width:100%;
+
+
+    height:450px;
+
+
+    object-fit:cover;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+
+    0 20px 45px rgba(0,0,0,.15);
+
+
+    animation:imageMove 4s infinite ease-in-out;
+
+
+}
+
+
+
+
+
+
+.intro-text span{
+
+
+    display:inline-block;
+
+
+    background:#ff9800;
+
+
+    color:white;
+
+
+    padding:8px 25px;
+
+
+    border-radius:30px;
+
+
+    font-weight:700;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.intro-text h2{
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.intro-text p{
+
+
+    color:#555;
+
+
+    line-height:1.8;
+
+
+    font-size:17px;
+
+
+    margin-bottom:18px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+UPCOMING EVENTS
+========================= */
+
+
+.upcoming-events{
+
+
+    padding:90px 8%;
+
+
+    background:#f8fbff;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+.upcoming-events h2{
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+
+
+
+.event-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(4,1fr);
+
+
+    gap:30px;
+
+
+}
+
+
+
+
+
+
+.event-card{
+
+
+    background:white;
+
+
+    padding:35px 25px;
+
+
+    border-radius:22px;
+
+
+    box-shadow:
+
+
+    0 15px 35px rgba(0,0,0,.08);
+
+
+    transition:.4s;
+
+
+    border-top:6px solid #ff9800;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+
+.event-card::after{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:100%;
+
+
+    height:100%;
+
+
+    left:0;
+
+
+    top:100%;
+
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    rgba(11,61,145,.08),
+
+    rgba(255,152,0,.15)
+
+    );
+
+
+    transition:.4s;
+
+
+    z-index:0;
+
+
+}
+
+
+
+
+
+
+.event-card:hover::after{
+
+
+    top:0;
+
+
+}
+
+
+
+
+
+
+.event-card:hover{
+
+
+    transform:translateY(-12px);
+
+
+    box-shadow:
+
+
+    0 25px 50px rgba(0,0,0,.15);
+
+
+}
+
+
+
+
+
+
+.event-card h3,
+
+
+.event-card p{
+
+
+    position:relative;
+
+
+    z-index:1;
+
+
+}
+
+
+
+
+
+
+.event-card h3{
+
+
+    color:#0b3d91;
+
+
+    font-size:23px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.event-card p{
+
+
+    color:#666;
+
+
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+
+.event-card strong{
+
+
+    color:#ff9800;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+ANIMATIONS
+========================= */
+
+
+@keyframes tournamentSlide{
+
+
+from{
+
+
+    opacity:0;
+
+
+    transform:translateY(-50px);
+
+
+}
+
+
+to{
+
+
+    opacity:1;
+
+
+    transform:translateY(0);
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+@keyframes tournamentFade{
+
+
+from{
+
+
+    opacity:0;
+
+
+}
+
+
+to{
+
+
+    opacity:1;
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+@keyframes imageMove{
+
+
+0%,100%{
+
+
+    transform:translateY(0);
+
+
+}
+
+
+50%{
+
+
+    transform:translateY(-12px);
+
+
+}
+
+
+}
+@media(max-width:1000px){
+
+
+.event-grid{
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+.tournament-intro{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+@media(max-width:600px){
+
+
+.tournament-banner h1{
+
+
+    font-size:35px;
+
+
+}
+
+
+
+.tournament-banner p{
+
+
+    font-size:17px;
+
+
+}
+
+
+
+.intro-text h2,
+
+
+.upcoming-events h2{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+.event-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.intro-image img{
+
+
+    height:320px;
+
+
+}
+
+
+
+}
+/* =========================================
+TOURNAMENT REGISTRATION CSS
+
+PART 2:
+Forms
+Team Registration
+Rules
+Prizes
+Payment
+========================================= */
+
+
+
+
+
+
+
+/* =========================
+REGISTRATION FORM
+========================= */
+
+
+.tournament-registration-form{
+
+
+    padding:90px 8%;
+
+
+    background:white;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+.tournament-registration-form h2{
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:40px;
+
+
+}
+
+
+
+
+
+
+.tournament-registration-form form{
+
+
+    max-width:850px;
+
+
+    margin:auto;
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+
+.tournament-registration-form input,
+
+
+.tournament-registration-form select,
+
+
+.tournament-registration-form textarea,
+
+
+.team-registration input{
+
+
+    width:100%;
+
+
+    padding:15px 18px;
+
+
+    border:1px solid #ddd;
+
+
+    border-radius:12px;
+
+
+    outline:none;
+
+
+    font-family:'Poppins',sans-serif;
+
+
+    font-size:15px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.tournament-registration-form input:focus,
+
+
+.tournament-registration-form select:focus,
+
+
+.tournament-registration-form textarea:focus,
+
+
+.team-registration input:focus{
+
+
+    border-color:#0b3d91;
+
+
+    box-shadow:
+
+    0 0 10px rgba(11,61,145,.15);
+
+
+}
+
+
+
+
+
+
+.tournament-registration-form textarea{
+
+
+    grid-column:1/3;
+
+
+    resize:none;
+
+
+}
+
+
+
+
+
+
+.tournament-registration-form .main-btn{
+
+
+    grid-column:1/3;
+
+
+    border:none;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+TEAM REGISTRATION
+========================= */
+
+
+.team-registration{
+
+
+    padding:80px 8%;
+
+
+    background:#f8fbff;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+.team-registration h2{
+
+
+    color:#0b3d91;
+
+
+    font-size:38px;
+
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+
+
+
+.team-registration form{
+
+
+    max-width:800px;
+
+
+    margin:auto;
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+RULES SECTION
+========================= */
+
+
+.rules{
+
+
+    padding:90px 8%;
+
+
+    background:white;
+
+
+}
+
+
+
+
+
+
+.rules h2{
+
+
+    text-align:center;
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:40px;
+
+
+}
+
+
+
+
+
+
+.rules ul{
+
+
+    max-width:850px;
+
+
+    margin:auto;
+
+
+    list-style:none;
+
+
+    display:grid;
+
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+
+.rules li{
+
+
+    background:#f8fbff;
+
+
+    padding:20px 25px;
+
+
+    border-radius:15px;
+
+
+    border-left:5px solid #ff9800;
+
+
+    color:#555;
+
+
+    font-size:16px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.rules li:hover{
+
+
+    transform:translateX(10px);
+
+
+    background:white;
+
+
+    box-shadow:
+
+
+    0 10px 25px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+PRIZES SECTION
+========================= */
+
+
+.prizes{
+
+
+    padding:90px 8%;
+
+
+    background:#f8fbff;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+.prizes h2{
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+
+
+
+.prize-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(3,1fr);
+
+
+    gap:35px;
+
+
+}
+
+
+
+
+
+
+.prize-card{
+
+
+    background:white;
+
+
+    padding:45px 25px;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+
+    0 15px 35px rgba(0,0,0,.08);
+
+
+    transition:.4s;
+
+
+}
+
+
+
+
+
+
+.prize-card:hover{
+
+
+    transform:translateY(-15px);
+
+
+    box-shadow:
+
+
+    0 25px 50px rgba(0,0,0,.15);
+
+
+}
+
+
+
+
+
+
+.medal{
+
+
+    display:block;
+
+
+    font-size:55px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.prize-card h3{
+
+
+    color:#0b3d91;
+
+
+    font-size:25px;
+
+
+}
+
+
+
+
+
+
+.prize-card p{
+
+
+    color:#ff9800;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+PAYMENT SECTION
+========================= */
+
+
+.tournament-payment{
+
+
+    padding:90px 8%;
+
+
+    text-align:center;
+
+
+    background:white;
+
+
+}
+
+
+
+
+
+
+.tournament-payment h2{
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.tournament-payment > p{
+
+
+    color:#666;
+
+
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+
+.tournament-payment .payment-card{
+
+
+    max-width:450px;
+
+
+    margin:40px auto;
+
+
+    padding:45px 30px;
+
+
+    background:white;
+
+
+    border-radius:25px;
+
+
+    border-top:8px solid #35a936;
+
+
+    box-shadow:
+
+
+    0 20px 45px rgba(0,0,0,.12);
+
+
+    transition:.4s;
+
+
+}
+
+
+
+
+
+
+.tournament-payment .payment-card:hover{
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+
+
+
+
+.payment-card h3{
+
+
+    color:#35a936;
+
+
+    font-size:25px;
+
+
+}
+
+
+
+
+
+
+.payment-card h1{
+
+
+    color:#0b3d91;
+
+
+    font-size:55px;
+
+
+    margin:15px 0;
+
+
+}
+
+
+
+
+
+
+.payment-card h2{
+
+
+    color:#ff9800;
+
+
+    font-size:35px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+RESPONSIVE
+========================= */
+
+
+@media(max-width:900px){
+
+
+
+.tournament-registration-form form,
+
+
+.team-registration form{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+.tournament-registration-form textarea,
+
+
+.tournament-registration-form .main-btn{
+
+
+    grid-column:auto;
+
+
+}
+
+
+
+
+.prize-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+}
+/* =========================================
+TOURNAMENT REGISTRATION CSS
+
+PART 3:
+FAQ
+CTA
+WHATSAPP
+FINAL RESPONSIVE
+========================================= */
+
+
+
+
+
+
+/* =========================
+TOURNAMENT FAQ
+========================= */
+
+
+.tournament-faq{
+
+
+    padding:90px 8%;
+
+
+    background:#f8fbff;
+
+
+}
+
+
+
+
+
+
+.tournament-faq h2{
+
+
+    text-align:center;
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+
+
+
+.tournament-faq-item{
+
+
+    max-width:900px;
+
+
+    margin:20px auto;
+
+
+    padding:30px;
+
+
+    background:white;
+
+
+    border-radius:20px;
+
+
+    border-left:6px solid #ff9800;
+
+
+    box-shadow:
+
+
+    0 12px 30px rgba(0,0,0,.08);
+
+
+    transition:.4s;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+.tournament-faq-item:hover{
+
+
+    transform:translateX(10px);
+
+
+    box-shadow:
+
+
+    0 20px 40px rgba(0,0,0,.12);
+
+
+}
+
+
+
+
+
+
+.tournament-faq-item h3{
+
+
+    color:#0b3d91;
+
+
+    font-size:22px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+
+.tournament-faq-item p{
+
+
+    color:#666;
+
+
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+CALL TO ACTION
+========================= */
+
+
+.tournament-register{
+
+
+    padding:90px 8%;
+
+
+    text-align:center;
+
+
+    background:
+
+
+    linear-gradient(
+
+    135deg,
+
+    #0b3d91,
+
+    #071d49
+
+    );
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+.tournament-register h2{
+
+
+    font-size:45px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.tournament-register p{
+
+
+    max-width:850px;
+
+
+    margin:0 auto 35px;
+
+
+    line-height:1.8;
+
+
+    font-size:18px;
+
+
+}
+
+
+
+
+
+
+.tournament-register .main-btn{
+
+
+    display:inline-block;
+
+
+    background:#ff9800;
+
+
+    color:white;
+
+
+    padding:16px 40px;
+
+
+    border-radius:40px;
+
+
+    font-weight:700;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.tournament-register .main-btn:hover{
+
+
+    background:white;
+
+
+    color:#0b3d91;
+
+
+    transform:translateY(-6px);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+WHATSAPP FLOAT BUTTON
+========================= */
+
+
+.whatsapp-float{
+
+
+    position:fixed;
+
+
+    bottom:25px;
+
+
+    right:25px;
+
+
+    width:60px;
+
+
+    height:60px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    background:#25D366;
+
+
+    color:white;
+
+
+    border-radius:50%;
+
+
+    font-size:32px;
+
+
+    z-index:999;
+
+
+    box-shadow:
+
+
+    0 10px 25px rgba(0,0,0,.25);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.whatsapp-float:hover{
+
+
+    transform:scale(1.15);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+BUTTON EFFECT
+========================= */
+
+
+.tournament-register .main-btn,
+
+
+.tournament-registration-form .main-btn{
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+SCROLL ANIMATION CLASSES
+========================= */
+
+
+.tournament-show{
+
+
+    animation:tournamentShow .8s ease forwards;
+
+
+}
+
+
+
+
+
+
+@keyframes tournamentShow{
+
+
+from{
+
+
+    opacity:0;
+
+
+    transform:translateY(40px);
+
+
+}
+
+
+
+to{
+
+
+    opacity:1;
+
+
+    transform:translateY(0);
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+FINAL MOBILE DESIGN
+========================= */
+
+
+@media(max-width:700px){
+
+
+
+.tournament-faq{
+
+
+    padding:60px 5%;
+
+
+}
+
+
+
+.tournament-faq h2,
+
+
+.tournament-payment h2,
+
+
+.rules h2,
+
+
+.prizes h2{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+
+.tournament-faq-item{
+
+
+    padding:22px;
+
+
+}
+
+
+
+
+.tournament-register{
+
+
+    padding:60px 5%;
+
+
+}
+
+
+
+
+.tournament-register h2{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+
+.tournament-register p{
+
+
+    font-size:16px;
+
+
+}
+
+
+
+
+.whatsapp-float{
+
+
+    width:55px;
+
+
+    height:55px;
+
+
+    font-size:28px;
+
+
+}
+
+
+
+}

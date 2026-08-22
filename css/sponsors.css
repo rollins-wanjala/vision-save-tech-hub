@@ -1,0 +1,1799 @@
+/* =========================================
+VISION SAVE HUB TECH
+
+SPONSORS PAGE CSS
+
+PART 1:
+Banner
+Story Section
+Support Cards
+Animations
+========================================= */
+
+
+
+
+
+/* =========================
+SPONSORS PAGE BODY
+========================= */
+
+
+.sponsors-page{
+
+    background:#ffffff;
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+SPONSOR BANNER
+========================= */
+
+
+.sponsor-banner{
+
+
+    background:
+
+    linear-gradient(
+
+    rgba(11,61,145,.80),
+
+    rgba(11,61,145,.80)
+
+    ),
+
+    url("../images/banners/sponsor-banner.jpg");
+
+
+    background-size:cover;
+
+
+    background-position:center;
+
+
+    min-height:430px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    text-align:center;
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+.sponsor-banner h1{
+
+
+    font-size:55px;
+
+
+    font-weight:800;
+
+
+    margin-bottom:20px;
+
+
+    animation:slideDown 1s ease;
+
+
+}
+
+
+
+
+
+
+.sponsor-banner p{
+
+
+    font-size:21px;
+
+
+    animation:fadeIn 1.5s ease;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+SPONSOR STORY SECTION
+
+IMAGE + TEXT
+========================= */
+
+
+.sponsor-story{
+
+
+    padding:90px 8%;
+
+
+    display:grid;
+
+
+    grid-template-columns:1fr 1fr;
+
+
+    gap:60px;
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+
+.story-image img{
+
+
+    width:100%;
+
+
+    height:450px;
+
+
+    object-fit:cover;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+    0 20px 45px rgba(0,0,0,.15);
+
+
+    animation:imageFloat 4s infinite ease-in-out;
+
+
+}
+
+
+
+
+
+
+.story-text span{
+
+
+    display:inline-block;
+
+
+    background:#ff9800;
+
+
+    color:white;
+
+
+    padding:8px 25px;
+
+
+    border-radius:30px;
+
+
+    font-weight:700;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.story-text h2{
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.story-text p{
+
+
+    color:#555;
+
+
+    line-height:1.9;
+
+
+    font-size:17px;
+
+
+    margin-bottom:18px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+SUPPORT OPTIONS
+========================= */
+
+
+.support-options{
+
+
+    background:#f8fbff;
+
+
+    padding:90px 8%;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+.support-options h2{
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+
+
+
+.support-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(4,1fr);
+
+
+    gap:30px;
+
+
+}
+
+
+
+
+
+
+.support-card{
+
+
+    background:white;
+
+
+    padding:40px 25px;
+
+
+    border-radius:22px;
+
+
+    box-shadow:
+
+
+    0 15px 35px rgba(0,0,0,.08);
+
+
+    transition:.4s;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+
+
+.support-card::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    top:0;
+
+
+    left:0;
+
+
+    height:5px;
+
+
+    width:100%;
+
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    #0b3d91,
+
+    #ff9800
+
+    );
+
+
+}
+
+
+
+
+
+
+.support-card:hover{
+
+
+    transform:translateY(-15px);
+
+
+    box-shadow:
+
+
+    0 25px 50px rgba(0,0,0,.15);
+
+
+}
+
+
+
+
+
+
+.support-card i{
+
+
+    width:80px;
+
+
+    height:80px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    margin:auto;
+
+
+    margin-bottom:25px;
+
+
+    border-radius:50%;
+
+
+    background:#0b3d91;
+
+
+    color:white;
+
+
+    font-size:35px;
+
+
+    transition:.5s;
+
+
+}
+
+
+
+
+
+
+.support-card:hover i{
+
+
+    background:#ff9800;
+
+
+    transform:rotateY(360deg);
+
+
+}
+
+
+
+
+
+
+.support-card h3{
+
+
+    color:#0b3d91;
+
+
+    font-size:22px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+
+.support-card p{
+
+
+    color:#666;
+
+
+    line-height:1.7;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+ANIMATIONS
+========================= */
+
+
+@keyframes slideDown{
+
+
+from{
+
+
+    opacity:0;
+
+
+    transform:translateY(-40px);
+
+
+}
+
+
+to{
+
+
+    opacity:1;
+
+
+    transform:translateY(0);
+
+
+}
+
+
+}
+
+
+
+
+
+
+@keyframes fadeIn{
+
+
+from{
+
+
+    opacity:0;
+
+
+}
+
+
+to{
+
+
+    opacity:1;
+
+
+}
+
+
+}
+
+
+
+
+
+
+@keyframes imageFloat{
+
+
+0%,100%{
+
+
+    transform:translateY(0);
+
+
+}
+
+
+50%{
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+}
+@media(max-width:1000px){
+
+
+.support-grid{
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+.sponsor-story{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+.sponsor-banner h1{
+
+
+    font-size:35px;
+
+
+}
+
+
+
+.sponsor-banner p{
+
+
+    font-size:16px;
+
+
+}
+
+
+
+.story-text h2,
+
+
+.support-options h2{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+.support-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.story-image img{
+
+
+    height:320px;
+
+
+}
+
+
+}
+/* =========================================
+SPONSORS PAGE CSS
+
+PART 2:
+Impact Goals
+Recognition
+Donation Section
+========================================= */
+
+
+
+
+
+
+
+/* =========================
+IMPACT GOALS
+========================= */
+
+
+.impact-goals{
+
+
+    padding:90px 8%;
+
+
+    background:white;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.impact-goals h2{
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+
+
+
+.impact-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(3,1fr);
+
+
+    gap:30px;
+
+
+}
+
+
+
+
+
+
+.impact-grid div{
+
+
+    background:#f8fbff;
+
+
+    padding:35px 25px;
+
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+
+    0 12px 30px rgba(0,0,0,.08);
+
+
+    color:#555;
+
+
+    font-size:17px;
+
+
+    line-height:1.7;
+
+
+    transition:.4s;
+
+
+    border-left:5px solid #ff9800;
+
+
+}
+
+
+
+
+
+.impact-grid div:hover{
+
+
+    transform:translateY(-10px);
+
+
+    background:white;
+
+
+    box-shadow:
+
+
+    0 20px 40px rgba(0,0,0,.12);
+
+
+}
+
+
+
+
+
+
+.impact-grid i{
+
+
+    display:block;
+
+
+    font-size:35px;
+
+
+    color:#0b3d91;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.impact-grid p{
+
+
+    margin:0;
+
+
+    font-weight:500;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+RECOGNITION SECTION
+========================= */
+
+
+.recognition{
+
+
+    padding:80px 8%;
+
+
+    background:
+
+
+    linear-gradient(
+
+    135deg,
+
+    #0b3d91,
+
+    #071d49
+
+    );
+
+
+    color:white;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.recognition h2{
+
+
+    font-size:42px;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+
+.recognition p{
+
+
+    max-width:900px;
+
+
+    margin:auto;
+
+
+    font-size:18px;
+
+
+    line-height:1.9;
+
+
+    color:#f1f1f1;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+DONATION BOX
+========================= */
+
+
+.donation-box{
+
+
+    padding:90px 8%;
+
+
+    background:#f8fbff;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+.donation-box h2{
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.donation-box > p{
+
+
+    max-width:800px;
+
+
+    margin:0 auto 35px;
+
+
+    color:#666;
+
+
+    line-height:1.8;
+
+
+    font-size:17px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+MPESA PAYMENT CARD
+========================= */
+
+
+.payment-card{
+
+
+    max-width:450px;
+
+
+    margin:40px auto;
+
+
+    padding:45px 30px;
+
+
+    background:white;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+
+    0 20px 45px rgba(0,0,0,.12);
+
+
+    border-top:8px solid #35a936;
+
+
+    transition:.4s;
+
+
+}
+
+
+
+
+
+
+.payment-card:hover{
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+
+
+
+
+.payment-card h3{
+
+
+    color:#35a936;
+
+
+    font-size:25px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.payment-card h1{
+
+
+    color:#0b3d91;
+
+
+    font-size:55px;
+
+
+    margin:15px 0;
+
+
+    letter-spacing:2px;
+
+
+}
+
+
+
+
+
+
+.payment-card p{
+
+
+    color:#777;
+
+
+    font-size:17px;
+
+
+    margin:10px 0;
+
+
+}
+
+
+
+
+
+.payment-card h2{
+
+
+    color:#ff9800;
+
+
+    font-size:35px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+DONATION BUTTON
+========================= */
+
+
+.donation-box .main-btn{
+
+
+    display:inline-block;
+
+
+    background:#ff9800;
+
+
+    color:white;
+
+
+    padding:15px 35px;
+
+
+    border-radius:30px;
+
+
+    font-weight:700;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.donation-box .main-btn:hover{
+
+
+    background:#0b3d91;
+
+
+    transform:translateY(-5px);
+
+
+}
+@media(max-width:1000px){
+
+
+.impact-grid{
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+.impact-goals h2,
+.recognition h2,
+.donation-box h2{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+.impact-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.payment-card h1{
+
+
+    font-size:40px;
+
+
+}
+
+
+
+.payment-card h2{
+
+
+    font-size:28px;
+
+
+}
+
+
+}
+/* =========================================
+SPONSORS PAGE CSS
+
+PART 3:
+FAQ
+CTA
+WHATSAPP
+FINAL RESPONSIVE
+========================================= */
+
+
+
+
+
+
+/* =========================
+SPONSOR FAQ
+========================= */
+
+
+.sponsor-faq{
+
+
+    padding:90px 8%;
+
+
+    background:white;
+
+
+}
+
+
+
+
+
+.sponsor-faq h2{
+
+
+    text-align:center;
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+
+
+
+.sponsor-faq-item{
+
+
+    max-width:900px;
+
+
+    margin:20px auto;
+
+
+    padding:30px;
+
+
+    background:#f8fbff;
+
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+
+    0 12px 30px rgba(0,0,0,.08);
+
+
+    transition:.4s;
+
+
+    cursor:pointer;
+
+
+    border-left:5px solid #ff9800;
+
+
+}
+
+
+
+
+
+.sponsor-faq-item:hover{
+
+
+    transform:translateX(10px);
+
+
+    background:white;
+
+
+    box-shadow:
+
+
+    0 20px 40px rgba(0,0,0,.12);
+
+
+}
+
+
+
+
+
+
+.sponsor-faq-item h3{
+
+
+    color:#0b3d91;
+
+
+    font-size:22px;
+
+
+    margin-bottom:12px;
+
+
+}
+
+
+
+
+
+
+.sponsor-faq-item p{
+
+
+    color:#666;
+
+
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+SPONSOR CTA
+========================= */
+
+
+.sponsor-register{
+
+
+    padding:90px 8%;
+
+
+    text-align:center;
+
+
+    color:white;
+
+
+    background:
+
+
+    linear-gradient(
+
+    135deg,
+
+    #0b918f,
+
+    #071d49
+
+    );
+
+
+}
+
+
+
+
+
+
+.sponsor-register h2{
+
+
+    font-size:45px;
+
+     color:rgb(203, 218, 40);
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.sponsor-register p{
+
+
+    max-width:850px;
+
+
+    margin:0 auto 35px;
+
+
+    font-size:18px;
+
+     color:white;
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+
+.sponsor-register .main-btn{
+
+
+    display:inline-block;
+
+
+    background:#40ff00;
+
+
+    color:white;
+
+
+    padding:16px 40px;
+
+
+    border-radius:35px;
+
+
+    font-weight:700;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.sponsor-register .main-btn:hover{
+
+
+    background:white;
+
+
+    color:#0b3d91;
+
+
+    transform:translateY(-6px);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+WHATSAPP FLOATING BUTTON
+========================= */
+
+
+.whatsapp-float{
+
+
+    position:fixed;
+
+
+    right:25px;
+
+
+    bottom:25px;
+
+
+    width:60px;
+
+
+    height:60px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    border-radius:50%;
+
+
+    background:#25D366;
+
+
+    color:white;
+
+
+    font-size:32px;
+
+
+    z-index:999;
+
+
+    box-shadow:
+
+
+    0 10px 25px rgba(0,0,0,.25);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.whatsapp-float:hover{
+
+
+    transform:scale(1.15);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+BUTTON CLICK EFFECT
+========================= */
+
+
+.main-btn{
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+
+.click-bubble{
+
+
+    position:absolute;
+
+
+    width:20px;
+
+
+    height:20px;
+
+
+    background:rgba(255,255,255,.7);
+
+
+    border-radius:50%;
+
+
+    transform:scale(0);
+
+
+    animation:bubbleEffect .6s ease-out;
+
+
+}
+
+
+
+
+
+
+@keyframes bubbleEffect{
+
+
+from{
+
+
+    transform:scale(0);
+
+
+    opacity:1;
+
+
+}
+
+
+to{
+
+
+    transform:scale(5);
+
+
+    opacity:0;
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+FINAL RESPONSIVE
+========================= */
+
+
+@media(max-width:700px){
+
+
+
+.sponsor-faq h2,
+.sponsor-register h2{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+
+.sponsor-faq{
+
+
+    padding:60px 5%;
+
+
+}
+
+
+
+
+.sponsor-faq-item{
+
+
+    padding:20px;
+
+
+}
+
+
+
+
+.sponsor-register{
+
+
+    padding:60px 5%;
+
+
+}
+
+
+
+
+.sponsor-register p{
+
+
+    font-size:16px;
+
+
+}
+
+
+
+
+.whatsapp-float{
+
+
+    width:55px;
+
+
+    height:55px;
+
+
+    font-size:28px;
+
+
+}
+
+
+
+}

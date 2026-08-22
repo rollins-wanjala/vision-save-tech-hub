@@ -1,0 +1,2001 @@
+/* =========================================
+VISION SAVE HUB TECH
+
+REGISTRATION PAGE CSS
+
+PART 1:
+Banner
+Introduction
+Course Summary
+
+========================================= */
+
+
+
+
+
+
+/* =========================
+PAGE BODY
+========================= */
+
+
+.registration-page{
+
+
+    background:#ffffff;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+REGISTRATION BANNER
+========================= */
+
+
+.registration-banner{
+
+
+    background:
+
+
+    linear-gradient(
+
+    rgba(11,61,145,.85),
+
+    rgba(7,29,73,.85)
+
+    ),
+
+    url("../images/services/computer-banner.jpg");
+
+
+
+    background-size:cover;
+
+
+    background-position:center;
+
+
+    min-height:430px;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+.registration-banner h1{
+
+
+    font-size:55px;
+
+
+    font-weight:800;
+
+
+    margin-bottom:20px;
+
+
+    animation:registrationFadeDown 1s ease;
+
+
+}
+
+
+
+
+
+
+.registration-banner p{
+
+
+    font-size:22px;
+
+
+    animation:registrationFade 1.5s ease;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+INTRO SECTION
+========================= */
+
+
+.registration-intro{
+
+
+    padding:90px 8%;
+
+
+    display:grid;
+
+
+    grid-template-columns:1fr 1fr;
+
+
+    gap:60px;
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+
+.registration-intro .intro-image img{
+
+
+    width:100%;
+
+
+    height:430px;
+
+
+    object-fit:cover;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+
+    0 20px 45px rgba(0,0,0,.15);
+
+
+    animation:floatImage 4s infinite ease-in-out;
+
+
+}
+
+
+
+
+
+
+.registration-intro .intro-text span{
+
+
+    display:inline-block;
+
+
+    background:#ff9800;
+
+
+    color:white;
+
+
+    padding:8px 25px;
+
+
+    border-radius:30px;
+
+
+    font-weight:700;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.registration-intro .intro-text h2{
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.registration-intro .intro-text p{
+
+
+    color:#555;
+
+
+    line-height:1.8;
+
+
+    font-size:17px;
+
+
+    margin-bottom:18px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+COURSE SUMMARY
+========================= */
+
+
+.course-summary{
+
+
+    padding:90px 8%;
+
+
+    background:#f8fbff;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+.course-summary h2{
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+
+
+
+.summary-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(4,1fr);
+
+
+    gap:30px;
+
+
+}
+
+
+
+
+
+
+.summary-card{
+
+
+    background:white;
+
+
+    padding:35px 25px;
+
+
+    border-radius:22px;
+
+
+    box-shadow:
+
+
+    0 15px 35px rgba(0,0,0,.08);
+
+
+    transition:.4s;
+
+
+    border-top:5px solid #ff9800;
+
+
+}
+
+
+
+
+
+
+.summary-card:hover{
+
+
+    transform:translateY(-12px);
+
+
+    box-shadow:
+
+
+    0 25px 45px rgba(0,0,0,.15);
+
+
+}
+
+
+
+
+
+
+.summary-card i{
+
+
+    font-size:40px;
+
+
+    color:#0b3d91;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.summary-card h3{
+
+
+    color:#0b3d91;
+
+
+    font-size:22px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+
+.summary-card p{
+
+
+    color:#666;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+ANIMATIONS
+========================= */
+
+
+@keyframes registrationFadeDown{
+
+
+from{
+
+
+    opacity:0;
+
+
+    transform:translateY(-50px);
+
+
+}
+
+
+
+to{
+
+
+    opacity:1;
+
+
+    transform:translateY(0);
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+@keyframes registrationFade{
+
+
+from{
+
+
+    opacity:0;
+
+
+}
+
+
+
+to{
+
+
+    opacity:1;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+@keyframes floatImage{
+
+
+0%,100%{
+
+
+    transform:translateY(0);
+
+
+}
+
+
+
+50%{
+
+
+    transform:translateY(-12px);
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+RESPONSIVE
+========================= */
+
+
+@media(max-width:1000px){
+
+
+
+.registration-intro{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+.summary-grid{
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+@media(max-width:600px){
+
+
+
+.registration-banner h1{
+
+
+    font-size:35px;
+
+
+}
+
+
+
+.registration-banner p{
+
+
+    font-size:17px;
+
+
+}
+
+
+
+.registration-intro .intro-text h2,
+
+
+.course-summary h2{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+.summary-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.registration-intro .intro-image img{
+
+
+    height:300px;
+
+
+}
+
+
+
+}
+/* =========================================
+REGISTRATION CSS
+
+PART 2:
+Student Form
+Guardian Section
+Terms & Conditions
+
+========================================= */
+
+
+
+
+
+
+
+/* =========================
+STUDENT REGISTRATION FORM
+========================= */
+
+
+.student-registration-form{
+
+
+    padding:90px 8%;
+
+
+    background:white;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+.student-registration-form h2{
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:45px;
+
+
+}
+
+
+
+
+
+
+.student-registration-form form{
+
+
+    max-width:900px;
+
+
+    margin:auto;
+
+
+}
+
+
+
+
+
+
+.form-row{
+
+
+    display:grid;
+
+
+    grid-template-columns:1fr 1fr;
+
+
+    gap:25px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.student-registration-form input,
+
+
+.student-registration-form select,
+
+
+.student-registration-form textarea,
+
+
+.guardian-section input{
+
+
+    width:100%;
+
+
+    padding:16px 18px;
+
+
+    border:1px solid #ddd;
+
+
+    border-radius:12px;
+
+
+    outline:none;
+
+
+    font-family:'Poppins',sans-serif;
+
+
+    font-size:15px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.student-registration-form input:focus,
+
+
+.student-registration-form select:focus,
+
+
+.student-registration-form textarea:focus,
+
+
+.guardian-section input:focus{
+
+
+    border-color:#0b3d91;
+
+
+    box-shadow:
+
+    0 0 12px rgba(11,61,145,.15);
+
+
+}
+
+
+
+
+
+
+.student-registration-form textarea{
+
+
+    margin-top:20px;
+
+
+    resize:none;
+
+
+}
+
+
+
+
+
+
+.student-registration-form .main-btn{
+
+
+    margin-top:30px;
+
+
+    border:none;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+GUARDIAN SECTION
+========================= */
+
+
+.guardian-section{
+
+
+    padding:80px 8%;
+
+
+    background:#f8fbff;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+.guardian-section h2{
+
+
+    color:#0b3d91;
+
+
+    font-size:38px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+
+.guardian-section p{
+
+
+    color:#666;
+
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+
+
+
+.guardian-section form{
+
+
+    max-width:800px;
+
+
+    margin:auto;
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(3,1fr);
+
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+TERMS SECTION
+========================= */
+
+
+.registration-terms{
+
+
+    padding:80px 8%;
+
+
+    background:white;
+
+
+}
+
+
+
+
+
+
+.registration-terms h2{
+
+
+    text-align:center;
+
+
+    color:#0b3d91;
+
+
+    font-size:38px;
+
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+
+
+
+.registration-terms ul{
+
+
+    max-width:900px;
+
+
+    margin:auto;
+
+
+    list-style:none;
+
+
+    display:grid;
+
+
+    gap:18px;
+
+
+}
+
+
+
+
+
+
+.registration-terms li{
+
+
+    background:#f8fbff;
+
+
+    padding:20px 25px;
+
+
+    border-left:5px solid #ff9800;
+
+
+    border-radius:12px;
+
+
+    color:#555;
+
+
+    line-height:1.7;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.registration-terms li:hover{
+
+
+    transform:translateX(10px);
+
+
+    box-shadow:
+
+
+    0 10px 25px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
+
+
+.registration-terms label{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    gap:10px;
+
+
+    margin-top:35px;
+
+
+    color:#333;
+
+
+    font-weight:500;
+
+
+}
+
+
+
+
+
+
+.registration-terms input{
+
+
+    width:18px;
+
+
+    height:18px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+FORM BUTTON ANIMATION
+========================= */
+
+
+.student-registration-form .main-btn{
+
+
+    background:#ff9800;
+
+
+    color:white;
+
+
+    padding:16px 45px;
+
+
+    border-radius:40px;
+
+
+    font-weight:700;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.student-registration-form .main-btn:hover{
+
+
+    background:#0b3d91;
+
+
+    transform:translateY(-5px);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+RESPONSIVE
+========================= */
+
+
+@media(max-width:900px){
+
+
+
+.form-row{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.guardian-section form{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+@media(max-width:600px){
+
+
+
+.student-registration-form,
+
+
+.guardian-section,
+
+
+.registration-terms{
+
+
+    padding:60px 5%;
+
+
+}
+
+
+
+.student-registration-form h2,
+
+
+.guardian-section h2,
+
+
+.registration-terms h2{
+
+
+    font-size:30px;
+
+
+}
+
+
+
+.registration-terms label{
+
+
+    flex-direction:column;
+
+
+    text-align:center;
+
+
+}
+
+
+
+}
+/* =========================================
+REGISTRATION CSS
+
+PART 3:
+Payment
+FAQ
+CTA
+WhatsApp
+Final Responsive
+
+========================================= */
+
+
+
+
+
+
+
+/* =========================
+M-PESA PAYMENT SECTION
+========================= */
+
+
+.registration-payment{
+
+
+    padding:90px 8%;
+
+
+    background:#f8fbff;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+.registration-payment h2{
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.registration-payment p{
+
+
+    color:#555;
+
+
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+
+.registration-payment .payment-card{
+
+
+    max-width:450px;
+
+
+    margin:40px auto;
+
+
+    padding:45px 30px;
+
+
+    background:white;
+
+
+    border-radius:25px;
+
+
+    border-top:8px solid #35a936;
+
+
+    box-shadow:
+
+
+    0 20px 45px rgba(0,0,0,.12);
+
+
+    transition:.4s;
+
+
+}
+
+
+
+
+
+
+.registration-payment .payment-card:hover{
+
+
+    transform:translateY(-12px);
+
+
+}
+
+
+
+
+
+
+.payment-card h3{
+
+
+    color:#35a936;
+
+
+    font-size:26px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+
+.payment-card h1{
+
+
+    color:#0b3d91;
+
+
+    font-size:60px;
+
+
+    margin:15px 0;
+
+
+}
+
+
+
+
+
+
+.payment-card h2{
+
+
+    color:#ff9800;
+
+
+    font-size:36px;
+
+
+}
+
+
+
+
+
+
+.registration-payment .main-btn{
+
+
+    display:inline-block;
+
+
+    margin-top:25px;
+
+
+    background:#25D366;
+
+
+    color:white;
+
+
+    padding:16px 40px;
+
+
+    border-radius:40px;
+
+
+    font-weight:700;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.registration-payment .main-btn:hover{
+
+
+    background:#0b3d91;
+
+
+    transform:translateY(-5px);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+FAQ SECTION
+========================= */
+
+
+.registration-faq{
+
+
+    padding:90px 8%;
+
+
+    background:white;
+
+
+}
+
+
+
+
+
+
+.registration-faq h2{
+
+
+    text-align:center;
+
+
+    color:#0b3d91;
+
+
+    font-size:42px;
+
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+
+
+
+.registration-faq-item{
+
+
+    max-width:900px;
+
+
+    margin:20px auto;
+
+
+    background:#f8fbff;
+
+
+    padding:30px;
+
+
+    border-radius:18px;
+
+
+    border-left:6px solid #ff9800;
+
+
+    box-shadow:
+
+
+    0 10px 30px rgba(0,0,0,.06);
+
+
+    transition:.4s;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+.registration-faq-item:hover{
+
+
+    transform:translateX(10px);
+
+
+    box-shadow:
+
+
+    0 20px 40px rgba(0,0,0,.12);
+
+
+}
+
+
+
+
+
+
+.registration-faq-item h3{
+
+
+    color:#0b3d91;
+
+
+    font-size:22px;
+
+
+    margin-bottom:12px;
+
+
+}
+
+
+
+
+
+
+.registration-faq-item p{
+
+
+    color:#666;
+
+
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+CTA SECTION
+========================= */
+
+
+.registration-cta{
+
+
+    padding:90px 8%;
+
+
+    text-align:center;
+
+
+    background:
+
+
+    linear-gradient(
+
+    135deg,
+
+    #0b3d91,
+
+    #071d49
+
+    );
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+.registration-cta h2{
+
+
+    font-size:45px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.registration-cta p{
+
+
+    max-width:800px;
+
+
+    margin:0 auto 35px;
+
+
+    line-height:1.8;
+
+
+    font-size:18px;
+
+
+}
+
+
+
+
+
+
+.registration-cta .main-btn{
+
+
+    display:inline-block;
+
+
+    background:#ff9800;
+
+
+    color:white;
+
+
+    padding:16px 45px;
+
+
+    border-radius:40px;
+
+
+    font-weight:700;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.registration-cta .main-btn:hover{
+
+
+    background:white;
+
+
+    color:#0b3d91;
+
+
+    transform:translateY(-6px);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+FLOATING WHATSAPP BUTTON
+========================= */
+
+
+.whatsapp-float{
+
+
+    position:fixed;
+
+
+    bottom:25px;
+
+
+    right:25px;
+
+
+    width:60px;
+
+
+    height:60px;
+
+
+    background:#25D366;
+
+
+    color:white;
+
+
+    border-radius:50%;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    font-size:32px;
+
+
+    z-index:999;
+
+
+    box-shadow:
+
+
+    0 10px 30px rgba(0,0,0,.25);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.whatsapp-float:hover{
+
+
+    transform:scale(1.15);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+ANIMATION CLASSES
+========================= */
+
+
+.registration-show{
+
+
+    animation:registrationShow .8s ease forwards;
+
+
+}
+
+
+
+
+
+
+@keyframes registrationShow{
+
+
+from{
+
+
+    opacity:0;
+
+
+    transform:translateY(40px);
+
+
+}
+
+
+
+to{
+
+
+    opacity:1;
+
+
+    transform:translateY(0);
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+FINAL MOBILE DESIGN
+========================= */
+
+
+@media(max-width:700px){
+
+
+
+.registration-payment,
+
+
+.registration-faq,
+
+
+.registration-cta{
+
+
+    padding:60px 5%;
+
+
+}
+
+
+
+
+.registration-payment h2,
+
+
+.registration-faq h2{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+
+.payment-card h1{
+
+
+    font-size:45px;
+
+
+}
+
+
+
+
+.payment-card h2{
+
+
+    font-size:28px;
+
+
+}
+
+
+
+
+.registration-faq-item{
+
+
+    padding:22px;
+
+
+}
+
+
+
+
+.registration-faq-item h3{
+
+
+    font-size:19px;
+
+
+}
+
+
+
+
+.registration-cta h2{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+
+.registration-cta p{
+
+
+    font-size:16px;
+
+
+}
+
+
+
+
+.whatsapp-float{
+
+
+    width:55px;
+
+
+    height:55px;
+
+
+    font-size:28px;
+
+
+}
+
+
+
+}

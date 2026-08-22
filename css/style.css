@@ -1,0 +1,4601 @@
+/* =========================================
+VISION SAVE HUB TECH WEBSITE
+
+GLOBAL MASTER CSS
+
+CLEAN REWRITE
+
+PART 1:
+ROOT
+RESET
+TYPOGRAPHY
+CONTAINERS
+TOP BAR
+
+========================================= */
+
+
+
+/* =========================================
+ROOT COLORS
+========================================= */
+
+
+:root{
+
+
+    --primary:#0b3d91;
+
+    --secondary:#ff9800;
+
+    --accent:#00b894;
+
+    --dark:#071d49;
+
+    --light:#f8fbff;
+
+    --text:#444;
+
+    --gray:#777;
+
+    --white:#ffffff;
+
+
+    --shadow:
+
+    0 10px 30px rgba(0,0,0,.08);
+
+
+    --transition:.3s ease;
+
+
+}
+
+
+
+
+
+
+/* =========================================
+GLOBAL RESET
+========================================= */
+
+
+*,
+*::before,
+*::after{
+
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+
+}
+
+
+
+
+html{
+
+
+    scroll-behavior:smooth;
+
+    overflow-x:hidden;
+
+
+}
+
+
+
+
+
+body{
+
+
+    font-family:'Poppins',Arial,sans-serif;
+
+    background:var(--white);
+
+    color:var(--text);
+
+    line-height:1.6;
+
+    overflow-x:hidden;
+
+
+}
+
+
+
+
+
+img{
+
+
+    max-width:100%;
+
+    height:auto;
+
+    display:block;
+
+
+}
+
+
+
+
+
+a{
+
+
+    text-decoration:none;
+
+    color:inherit;
+
+
+}
+
+
+
+
+
+ul{
+
+
+    list-style:none;
+
+
+}
+
+
+
+
+
+button,
+input,
+textarea,
+select{
+
+
+    font-family:inherit;
+
+
+}
+
+
+
+
+
+button{
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================================
+TYPOGRAPHY
+========================================= */
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+
+    line-height:1.3;
+
+    font-weight:700;
+
+
+}
+
+
+
+
+
+h1{
+
+
+    font-size:48px;
+
+
+}
+
+
+
+
+
+h2{
+
+
+    font-size:38px;
+
+
+}
+
+
+
+
+
+h3{
+
+
+    font-size:24px;
+
+
+}
+
+
+
+
+
+p{
+
+
+    font-size:16px;
+
+    color:var(--text);
+
+
+}
+
+
+
+
+
+.text-center{
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================================
+CONTAINER SYSTEM
+========================================= */
+
+
+.container{
+
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+
+}
+
+
+
+
+
+
+.full-width{
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+
+
+/* =========================================
+GLOBAL SECTIONS
+========================================= */
+
+
+section{
+
+
+    padding:80px 5%;
+
+
+}
+
+
+
+
+
+.section-title{
+
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+
+
+.section-title span{
+
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+
+}
+
+
+
+
+
+.section-title h2{
+
+
+    color:var(--primary);
+
+    margin:15px 0;
+
+
+}
+
+
+
+
+
+.section-title p{
+
+
+    max-width:750px;
+
+    margin:auto;
+
+    color:var(--gray);
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================================
+TOP CONTACT BAR
+========================================= */
+
+
+.top-bar{
+
+
+    width:100%;
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    padding:10px 5%;
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+.top-bar-content{
+
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+.top-left,
+.top-right{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+.top-left span,
+.top-right span{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+
+}
+
+
+
+
+
+.top-bar i{
+
+
+    color:var(--secondary);
+
+
+}
+
+
+
+
+
+
+
+/* =========================================
+TOP BAR MOBILE FOUNDATION
+========================================= */
+
+
+@media(max-width:700px){
+
+
+
+.top-bar-content{
+
+
+    flex-direction:column;
+
+    text-align:center;
+
+
+}
+
+
+
+
+.top-left,
+.top-right{
+
+
+    flex-direction:column;
+
+    gap:8px;
+
+
+}
+
+
+
+
+
+
+}
+/* =========================================
+PART 2
+
+NAVBAR
+LOGO
+NAVIGATION
+MOBILE MENU
+BUTTONS
+
+========================================= */
+
+
+
+
+/* =========================================
+   MAIN NAVBAR
+========================================= */
+
+.navbar {
+    width: 100%;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 5%;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    position: relative;
+    z-index: 99999;
+}
+
+
+/* Navbar fixed after scrolling */
+
+.navbar.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* =========================================
+   DESKTOP NAVIGATION
+========================================= */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+
+/* =========================================
+   MOBILE NAVIGATION
+========================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 30px 0;
+        box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    }
+
+}
+
+
+
+
+
+/* =========================================
+LOGO
+========================================= */
+
+
+.logo{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+
+
+
+.logo img{
+
+
+    width:65px;
+
+    height:65px;
+
+    object-fit:contain;
+
+
+}
+
+
+
+
+
+.logo h2{
+
+
+    color:var(--primary);
+
+    font-size:23px;
+
+    text-transform:uppercase;
+
+    line-height:1.2;
+
+
+}
+
+
+
+
+
+.logo small{
+
+
+    color:var(--gray);
+
+    display:block;
+
+    font-size:13px;
+
+
+}
+
+
+
+
+
+
+
+/* =========================================
+DESKTOP NAVIGATION
+========================================= */
+
+
+
+
+.nav-links li{
+
+
+    position:relative;
+
+
+}
+
+
+
+
+
+.nav-links a{
+
+
+    color:#333;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    position:relative;
+
+
+}
+
+
+
+
+
+.nav-links a:hover,
+.nav-links a.active{
+
+
+    color:var(--primary);
+
+
+}
+
+
+
+
+
+.nav-links a::after{
+
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-7px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--secondary);
+
+    transition:var(--transition);
+
+
+}
+
+
+
+
+
+.nav-links a:hover::after,
+.nav-links a.active::after{
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================================
+MENU TOGGLE
+(MOBILE HAMBURGER)
+========================================= */
+
+
+.menu-toggle{
+
+
+    display:none;
+
+    width:45px;
+
+    height:45px;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:28px;
+
+    color:var(--primary);
+
+    cursor:pointer;
+
+    border-radius:8px;
+
+    transition:var(--transition);
+
+
+}
+
+
+
+
+
+.menu-toggle:hover{
+
+
+    background:rgba(11,61,145,.08);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================================
+HEADER BUTTON AREA
+========================================= */
+
+
+.buttons{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+
+}
+
+
+
+
+
+.register-btn,
+.donate-btn{
+
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:12px 24px;
+
+    border-radius:8px;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    white-space:nowrap;
+
+
+}
+
+
+
+
+
+.register-btn{
+
+
+    background:var(--secondary);
+
+
+}
+
+
+
+
+
+.donate-btn{
+
+
+    background:var(--primary);
+
+
+}
+
+
+
+
+
+.register-btn:hover,
+.donate-btn:hover{
+
+
+    transform:translateY(-3px);
+
+    opacity:.9;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================================
+GLOBAL BUTTONS
+========================================= */
+
+
+.main-btn,
+.secondary-btn,
+.whatsapp-btn{
+
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 30px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    border:none;
+
+    transition:var(--transition);
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+.main-btn{
+
+
+    background:var(--secondary);
+
+    color:white;
+
+
+}
+
+
+
+
+
+.secondary-btn{
+
+
+    background:var(--primary);
+
+    color:white;
+
+
+}
+
+
+
+
+
+.whatsapp-btn{
+
+
+    background:#25D366;
+
+    color:white;
+
+
+}
+
+
+
+
+
+.main-btn:hover,
+.secondary-btn:hover,
+.whatsapp-btn:hover{
+
+
+    transform:translateY(-4px);
+
+
+}
+
+
+
+
+
+
+
+/* =========================================
+MOBILE NAVIGATION
+========================================= */
+
+
+@media(max-width:900px){
+
+
+
+
+
+
+.menu-toggle{
+
+
+    display:flex;
+
+
+}
+
+
+
+
+.buttons{
+
+
+    display:none;
+
+
+}
+
+
+
+
+
+
+
+
+.nav-links.active{
+
+
+    display:flex;
+
+
+}
+
+
+
+
+
+.nav-links a{
+
+
+    font-size:17px;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================
+SMALL MOBILE LOGO FIX
+========================================= */
+
+
+@media(max-width:500px){
+
+
+
+.logo img{
+
+
+    width:50px;
+
+    height:50px;
+
+
+}
+
+
+
+
+.logo h2{
+
+
+    font-size:16px;
+
+
+}
+
+
+
+
+.logo small{
+
+
+    font-size:11px;
+
+
+}
+
+
+
+}
+/* =========================================
+PART 3
+
+PAGE BANNERS
+HERO SECTIONS
+COMMON CARDS
+FORMS
+CONTENT COMPONENTS
+
+========================================= */
+
+
+
+
+
+
+/* =========================================
+PAGE BANNER
+========================================= */
+
+
+.page-banner{
+
+
+    min-height:350px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    position:relative;
+
+    background-size:cover;
+
+    background-position:center;
+
+    color:white;
+
+
+}
+
+
+
+
+
+.banner-overlay{
+
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(7,29,73,.75);
+
+
+}
+
+
+
+
+
+.banner-content{
+
+
+    position:relative;
+
+    z-index:2;
+
+    width:90%;
+
+    max-width:850px;
+
+
+}
+
+
+
+
+
+.banner-content h1{
+
+
+    color:white;
+
+    font-size:48px;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+.banner-content p{
+
+
+    color:white;
+
+    font-size:20px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================================
+HERO SECTION
+========================================= */
+
+
+.hero{
+
+
+    min-height:600px;
+
+    display:flex;
+
+    align-items:center;
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+
+
+}
+
+
+
+
+
+.hero-overlay{
+
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+
+}
+
+
+
+
+
+.hero-content{
+
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:700px;
+
+    color:white;
+
+
+}
+
+
+
+
+
+.hero-content h1{
+
+
+    color:white;
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.hero-content p{
+
+
+    color:white;
+
+    font-size:18px;
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================================
+COMMON CARD DESIGN
+========================================= */
+
+
+.card,
+.service-card,
+.course-card,
+.value-box,
+.benefit-card,
+.console-card,
+.game-card,
+.team-card,
+.impact-card,
+.summary-card,
+.event-card,
+.prize-card{
+
+
+    background:white;
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+    padding:25px;
+
+    transition:var(--transition);
+
+
+}
+
+
+
+
+
+.card:hover,
+.service-card:hover,
+.course-card:hover,
+.value-box:hover,
+.benefit-card:hover,
+.console-card:hover,
+.game-card:hover,
+.team-card:hover,
+.impact-card:hover,
+.summary-card:hover,
+.event-card:hover,
+.prize-card:hover{
+
+
+    transform:translateY(-8px);
+
+
+}
+
+
+
+
+
+
+
+/* =========================================
+GRID SYSTEMS
+========================================= */
+
+
+.grid{
+
+
+    display:grid;
+
+    gap:30px;
+
+
+}
+
+
+
+
+
+.grid-2{
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+
+
+.grid-3{
+
+
+    grid-template-columns:repeat(3,1fr);
+
+
+}
+
+
+
+
+
+.grid-4{
+
+
+    grid-template-columns:repeat(4,1fr);
+
+
+}
+
+
+
+
+
+
+
+/* =========================================
+CONTENT IMAGE SECTIONS
+========================================= */
+
+
+.two-column{
+
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    align-items:center;
+
+    gap:50px;
+
+
+}
+
+
+
+
+
+.two-column img{
+
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+
+}
+
+
+
+
+
+
+
+/* =========================================
+FORMS GLOBAL
+========================================= */
+
+
+form{
+
+
+    width:100%;
+
+    max-width:800px;
+
+    margin:auto;
+
+
+}
+
+
+
+
+
+input,
+textarea,
+select{
+
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:18px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+input:focus,
+textarea:focus,
+select:focus{
+
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 8px rgba(11,61,145,.15);
+
+
+}
+
+
+
+
+
+textarea{
+
+
+    resize:vertical;
+
+    min-height:120px;
+
+
+}
+
+
+
+
+
+.form-row{
+
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================================
+CTA SECTION
+========================================= */
+
+
+.cta{
+
+
+    position:relative;
+
+    padding:80px 5%;
+
+    text-align:center;
+
+    background:
+
+    url("../images/banners/cta-bg.jpg")
+
+    center/cover no-repeat;
+
+    color:white;
+
+
+}
+
+
+
+
+
+.cta::before{
+
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(11,61,145,.8);
+
+
+}
+
+
+
+
+
+.cta-content{
+
+
+    position:relative;
+
+    z-index:2;
+
+
+}
+
+
+
+
+
+.cta h2{
+
+
+    color:white;
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.cta p{
+
+
+    color:white;
+
+    max-width:800px;
+
+    margin:0 auto 30px;
+
+
+}
+
+
+
+
+
+
+
+/* =========================================
+ICON BOXES
+========================================= */
+
+
+.icon-box{
+
+
+    text-align:center;
+
+    padding:30px;
+
+    background:white;
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+
+
+
+.icon-box i{
+
+
+    font-size:40px;
+
+    color:var(--secondary);
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.icon-box h3{
+
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+
+
+
+/* =========================================
+RESPONSIVE TABLET
+========================================= */
+
+
+@media(max-width:900px){
+
+
+.grid-4{
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+.grid-3{
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+.two-column{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.hero-content h1{
+
+
+    font-size:42px;
+
+
+}
+
+
+
+.banner-content h1{
+
+
+    font-size:38px;
+
+
+}
+
+
+
+.form-row{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+}
+/* =========================================
+PART 4
+
+FOOTER
+SOCIAL ICONS
+WHATSAPP BUTTON
+LOADER
+BACK TO TOP
+ANIMATIONS
+
+========================================= */
+
+
+
+
+
+
+/* =========================================
+FOOTER
+========================================= */
+
+
+.footer{
+
+
+    background:var(--dark);
+
+    color:white;
+
+    padding:70px 5% 20px;
+
+
+}
+
+
+
+
+
+.footer-container{
+
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:40px;
+
+
+}
+
+
+
+
+
+.footer-column h2,
+.footer-column h3{
+
+
+    color:var(--secondary);
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.footer-column p{
+
+
+    color:#ddd;
+
+    line-height:1.8;
+
+    margin-bottom:12px;
+
+
+}
+
+
+
+
+
+.footer-column ul li{
+
+
+    margin-bottom:12px;
+
+
+}
+
+
+
+
+
+.footer-column ul li a{
+
+
+    color:#ddd;
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.footer-column ul li a:hover{
+
+
+    color:var(--secondary);
+
+
+}
+
+
+
+
+
+.footer-column i{
+
+
+    color:var(--secondary);
+
+    margin-right:8px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================================
+SOCIAL ICONS
+========================================= */
+
+
+.social-icons{
+
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:20px;
+
+
+}
+
+
+
+
+
+.social-icons a{
+
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:var(--primary);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.social-icons a:hover{
+
+
+    background:var(--secondary);
+
+    color:white;
+
+    transform:translateY(-4px);
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================================
+FOOTER BOTTOM
+========================================= */
+
+
+.footer-bottom{
+
+
+    text-align:center;
+
+    margin-top:40px;
+
+    padding-top:20px;
+
+    border-top:1px solid rgba(255,255,255,.2);
+
+    color:#ddd;
+
+
+}
+
+
+
+
+
+.footer-bottom strong{
+
+
+    color:var(--secondary);
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================================
+FLOATING WHATSAPP BUTTON
+========================================= */
+
+
+.whatsapp-float{
+
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:32px;
+
+    z-index:9999;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+
+    transition:.3s;
+
+    animation:whatsappPulse 2s infinite;
+
+
+}
+
+
+
+
+
+.whatsapp-float:hover{
+
+
+    background:#128C7E;
+
+    transform:scale(1.1);
+
+
+}
+
+
+
+
+
+
+
+
+@keyframes whatsappPulse{
+
+
+0%{
+
+
+    box-shadow:0 0 0 0 rgba(37,211,102,.7);
+
+
+}
+
+
+
+70%{
+
+
+    box-shadow:0 0 0 20px rgba(37,211,102,0);
+
+
+}
+
+
+
+100%{
+
+
+    box-shadow:0 0 0 0 rgba(37,211,102,0);
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================================
+BACK TO TOP BUTTON
+========================================= */
+
+
+#backTop{
+
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:95px;
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--secondary);
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:2000;
+
+
+}
+
+
+
+
+
+#backTop.show{
+
+
+    display:flex;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================================
+PAGE LOADER
+========================================= */
+
+
+.loader{
+
+
+    position:fixed;
+
+    inset:0;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+    transition:.5s;
+
+
+}
+
+
+
+
+
+.loader.hide{
+
+
+    opacity:0;
+
+    visibility:hidden;
+
+
+}
+
+
+
+
+
+.loader-content{
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.loader-content img{
+
+
+    width:90px;
+
+    margin:auto;
+
+
+}
+
+
+
+
+
+.loader-content h2{
+
+
+    color:var(--primary);
+
+    margin-top:15px;
+
+
+}
+
+
+
+
+
+.loader-content p{
+
+
+    color:var(--gray);
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================================
+ANIMATION CLASSES
+========================================= */
+
+
+.fade-up{
+
+
+    animation:fadeUp .7s ease both;
+
+
+}
+
+
+
+
+
+.fade-in{
+
+
+    animation:fadeIn .7s ease both;
+
+
+}
+
+
+
+
+
+@keyframes fadeUp{
+
+
+from{
+
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+
+}
+
+
+
+to{
+
+
+    opacity:1;
+
+    transform:translateY(0);
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+@keyframes fadeIn{
+
+
+from{
+
+
+    opacity:0;
+
+
+}
+
+
+
+to{
+
+
+    opacity:1;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================================
+BUTTON RIPPLE EFFECT
+========================================= */
+
+
+.click-bubble{
+
+
+    position:absolute;
+
+    width:20px;
+
+    height:20px;
+
+    background:rgba(255,255,255,.7);
+
+    border-radius:50%;
+
+    transform:translate(-50%,-50%) scale(0);
+
+    pointer-events:none;
+
+    animation:bubble-pop .6s ease-out forwards;
+
+
+}
+
+
+
+
+
+@keyframes bubble-pop{
+
+
+0%{
+
+
+    transform:translate(-50%,-50%) scale(0);
+
+    opacity:1;
+
+
+}
+
+
+
+100%{
+
+
+    transform:translate(-50%,-50%) scale(8);
+
+    opacity:0;
+
+
+}
+
+
+
+}
+
+
+
+
+
+.main-btn,
+.secondary-btn,
+.register-btn,
+.donate-btn,
+.whatsapp-btn,
+.cta-btn,
+button,
+a{
+
+
+    position:relative;
+
+    overflow:hidden;
+
+
+}
+/* =========================================
+PART 5
+
+RESPONSIVE DESIGN
+
+TABLETS
+MOBILE
+SMALL PHONES
+GLOBAL MOBILE FIXES
+
+========================================= */
+
+
+
+
+
+
+/* =========================================
+LARGE TABLETS / SMALL LAPTOPS
+========================================= */
+
+
+@media(max-width:1100px){
+
+
+    .navbar{
+
+        padding:15px 4%;
+
+    }
+
+
+
+    .nav-links{
+
+        gap:15px;
+
+    }
+
+
+
+    .nav-links a{
+
+        font-size:14px;
+
+    }
+
+
+
+    .logo h2{
+
+        font-size:20px;
+
+    }
+
+
+
+    .footer-container{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================================
+TABLETS
+========================================= */
+
+
+@media(max-width:900px){
+
+
+
+
+
+.menu-toggle{
+
+    display:flex;
+
+}
+
+
+
+.nav-links{
+
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    width:100%;
+
+    background:white;
+
+    display:none;
+
+    flex-direction:column;
+
+    padding:30px 0;
+
+    gap:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+
+}
+
+
+
+.nav-links.active{
+
+
+    display:flex;
+
+
+}
+
+
+
+
+.nav-links a{
+
+
+    font-size:17px;
+
+
+}
+
+
+
+
+
+/* ---------- BUTTONS ---------- */
+
+
+.buttons{
+
+
+    display:none;
+
+
+}
+
+
+
+
+.main-btn,
+.secondary-btn,
+.whatsapp-btn{
+
+
+    padding:13px 25px;
+
+
+}
+
+
+
+
+
+
+
+/* ---------- GRIDS ---------- */
+
+
+.grid-4{
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+.grid-3{
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+.two-column{
+
+
+    grid-template-columns:1fr;
+
+    gap:30px;
+
+
+}
+
+
+
+
+
+/* ---------- BANNERS ---------- */
+
+
+.page-banner{
+
+
+    min-height:300px;
+
+
+}
+
+
+
+
+.banner-content h1{
+
+
+    font-size:38px;
+
+
+}
+
+
+
+
+
+.banner-content p{
+
+
+    font-size:17px;
+
+
+}
+
+
+
+
+
+
+
+/* ---------- HERO ---------- */
+
+
+.hero{
+
+
+    min-height:500px;
+
+
+}
+
+
+
+
+
+.hero-content h1{
+
+
+    font-size:42px;
+
+
+}
+
+
+
+
+
+
+
+/* ---------- FORMS ---------- */
+
+
+.form-row{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+input,
+textarea,
+select{
+
+
+    font-size:16px;
+
+
+}
+
+
+
+
+}
+/* =========================================
+MOBILE PHONES
+========================================= */
+
+
+@media(max-width:600px){
+
+
+
+/* ---------- GENERAL ---------- */
+
+
+section{
+
+
+    padding:55px 5%;
+
+
+}
+
+
+
+.container{
+
+
+    width:92%;
+
+
+}
+
+
+
+
+
+h1{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+
+
+h2{
+
+
+    font-size:28px;
+
+
+}
+
+
+
+
+
+h3{
+
+
+    font-size:21px;
+
+
+}
+
+
+
+
+
+p{
+
+
+    font-size:15px;
+
+
+}
+
+
+
+
+
+
+/* ---------- LOGO ---------- */
+
+
+.logo{
+
+
+    gap:10px;
+
+
+}
+
+
+
+
+.logo img{
+
+
+    width:50px;
+
+    height:50px;
+
+
+}
+
+
+
+
+
+.logo h2{
+
+
+    font-size:15px;
+
+
+}
+
+
+
+
+
+.logo small{
+
+
+    font-size:10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.top-bar-content{
+
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:8px;
+
+
+}
+
+
+
+
+
+.top-left,
+.top-right{
+
+
+    flex-direction:column;
+
+    gap:8px;
+
+
+}
+
+
+
+
+
+
+
+/* ---------- BANNER ---------- */
+
+
+.page-banner{
+
+
+    min-height:260px;
+
+
+}
+
+
+
+
+.banner-content{
+
+
+    width:95%;
+
+
+}
+
+
+
+
+.banner-content h1{
+
+
+    font-size:30px;
+
+    line-height:1.3;
+
+
+}
+
+
+
+
+
+.banner-content p{
+
+
+    font-size:15px;
+
+
+}
+
+
+
+
+
+
+
+/* ---------- HERO ---------- */
+
+
+.hero{
+
+
+    min-height:450px;
+
+
+}
+
+
+
+
+.hero-content h1{
+
+
+    font-size:34px;
+
+
+}
+
+
+
+
+.hero-content p{
+
+
+    font-size:16px;
+
+
+}
+
+
+
+
+
+
+
+/* ---------- GRIDS ---------- */
+
+
+.grid-2,
+.grid-3,
+.grid-4{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+
+.service-card,
+.course-card,
+.value-box,
+.benefit-card,
+.console-card,
+.game-card,
+.team-card,
+.event-card,
+.prize-card{
+
+
+    padding:20px;
+
+
+}
+
+
+
+
+
+
+
+/* ---------- FORMS ---------- */
+
+
+form{
+
+
+    width:100%;
+
+
+}
+
+
+
+
+input,
+textarea,
+select,
+button{
+
+
+    width:100%;
+
+    max-width:100%;
+
+
+}
+
+
+
+
+
+.form-row{
+
+
+    display:block;
+
+
+}
+
+
+
+
+
+button,
+.main-btn,
+.secondary-btn,
+.whatsapp-btn{
+
+
+    width:100%;
+
+    justify-content:center;
+
+
+}
+
+
+
+
+
+
+
+/* ---------- FOOTER ---------- */
+
+
+.footer{
+
+
+    padding:50px 5% 20px;
+
+
+}
+
+
+
+
+
+.footer-container{
+
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.social-icons{
+
+
+    justify-content:center;
+
+
+}
+
+
+
+
+
+/* ---------- WHATSAPP ---------- */
+
+
+.whatsapp-float{
+
+
+    width:55px;
+
+    height:55px;
+
+    right:15px;
+
+    bottom:15px;
+
+    font-size:28px;
+
+
+}
+
+
+
+
+}
+/* =========================================
+PART 6
+
+FINAL RESPONSIVE FIXES
+
+SMALL PHONES
+IMAGES
+MEDIA
+TABLES
+GLOBAL SAFETY
+PRINT
+
+========================================= */
+
+
+
+
+
+
+/* =========================================
+VERY SMALL PHONES
+320px - 400px
+========================================= */
+
+
+@media(max-width:400px){
+
+
+
+    .navbar{
+
+
+        padding:12px 4%;
+
+
+    }
+
+
+
+    .logo img{
+
+
+        width:45px;
+
+        height:45px;
+
+
+    }
+
+
+
+
+
+    .logo h2{
+
+
+        font-size:14px;
+
+
+    }
+
+
+
+
+
+    .menu-toggle{
+
+
+        font-size:24px;
+
+
+        width:40px;
+
+        height:40px;
+
+
+    }
+
+
+
+
+
+    .page-banner{
+
+
+        min-height:230px;
+
+
+    }
+
+
+
+
+
+    .banner-content h1{
+
+
+        font-size:25px;
+
+
+    }
+
+
+
+
+
+    .banner-content p{
+
+
+        font-size:14px;
+
+
+    }
+
+
+
+
+
+    .hero-content h1{
+
+
+        font-size:28px;
+
+
+    }
+
+
+
+
+
+    section{
+
+
+        padding:45px 4%;
+
+
+    }
+
+
+
+
+
+    .main-btn,
+    .secondary-btn,
+    .whatsapp-btn{
+
+
+        font-size:14px;
+
+        padding:12px 18px;
+
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================================
+GLOBAL IMAGE SAFETY
+========================================= */
+
+
+img{
+
+
+    max-width:100%;
+
+    height:auto;
+
+
+}
+
+
+
+
+
+.gallery-grid img,
+.gallery img,
+.card img,
+.service-card img,
+.course-card img{
+
+
+    width:100%;
+
+    object-fit:cover;
+
+
+}
+
+
+
+
+
+video{
+
+
+    max-width:100%;
+
+    height:auto;
+
+
+}
+
+
+
+
+
+iframe{
+
+
+    width:100%;
+
+    max-width:100%;
+
+    border:0;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================================
+TABLE RESPONSIVENESS
+========================================= */
+
+
+.table-container{
+
+
+    width:100%;
+
+    overflow-x:auto;
+
+
+}
+
+
+
+
+
+table{
+
+
+    width:100%;
+
+    border-collapse:collapse;
+
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+
+table{
+
+
+    display:block;
+
+    overflow-x:auto;
+
+    white-space:nowrap;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================================
+LONG TEXT PROTECTION
+========================================= */
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a{
+
+
+    overflow-wrap:break-word;
+
+
+}
+
+
+
+
+
+input,
+textarea,
+select{
+
+
+    box-sizing:border-box;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================================
+FLEX SAFETY
+========================================= */
+
+
+.flex{
+
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+.row{
+
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+
+.flex,
+.row{
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================================
+HIDE ELEMENTS
+========================================= */
+
+
+.desktop-only{
+
+
+    display:block;
+
+
+}
+
+
+
+
+
+.mobile-only{
+
+
+    display:none;
+
+
+}
+
+
+
+
+
+@media(max-width:900px){
+
+
+
+.desktop-only{
+
+
+    display:none;
+
+
+}
+
+
+
+
+
+.mobile-only{
+
+
+    display:block;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================================
+LOADING IMAGE FIX
+========================================= */
+
+
+.lazy-image{
+
+
+    opacity:0;
+
+    transition:.5s;
+
+
+}
+
+
+
+
+
+.lazy-image.loaded{
+
+
+    opacity:1;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================================
+ACCESSIBILITY
+========================================= */
+
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus{
+
+
+    outline:2px solid var(--secondary);
+
+    outline-offset:2px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================================
+PRINT MODE
+========================================= */
+
+
+@media print{
+
+
+.navbar,
+.top-bar,
+.footer,
+.whatsapp-float,
+#backTop{
+
+
+    display:none!important;
+
+
+}
+
+
+
+
+
+body{
+
+
+    background:white;
+
+    color:black;
+
+
+}
+
+
+
+
+
+section{
+
+
+    padding:20px;
+
+
+}
+
+
+
+}
+/* =================================
+FOOTER FINAL FIX
+================================= */
+
+.footer{
+    width:100%;
+    overflow:hidden;
+}
+
+
+.footer-container,
+.footer-grid{
+
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+
+}
+
+
+.footer-column{
+
+    min-width:0;
+
+}
+
+
+.footer-column p,
+.footer-column a{
+
+    word-wrap:break-word;
+
+}
+
+
+@media(max-width:900px){
+
+.footer-container,
+.footer-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+.footer-container,
+.footer-grid{
+
+    grid-template-columns:1fr;
+    text-align:center;
+
+}
+
+
+.footer-column{
+
+    width:100%;
+
+}
+
+
+.social-icons{
+
+    justify-content:center;
+
+}
+
+}
+/* ================================
+ABOUT FOOTER FIX
+================================ */
+
+
+.footer-logo{
+
+    width:90px;
+    height:auto;
+    margin-bottom:15px;
+
+}
+
+
+
+.footer-column ul{
+
+    padding:0;
+
+}
+
+
+
+.footer-column ul li{
+
+    color:#ddd;
+
+}
+
+
+
+.footer-column ul li a{
+
+    color:#ddd;
+
+}
+
+
+
+.footer-column ul li a:hover{
+
+    color:var(--secondary);
+
+}
+/* Prevent horizontal scrolling */
+
+html,
+body{
+
+    overflow-x:hidden;
+
+}
+
+*{
+
+    max-width:100%;
+
+}
+/* =====================================
+   FOOTER COMPATIBILITY FIX
+   For older pages:
+   computer-packages2.html
+   gaming.html
+===================================== */
+
+
+.footer .container{
+
+    width:100%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:0;
+
+}
+
+
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:40px;
+
+}
+
+
+
+.footer-bottom{
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    padding:25px 10px;
+
+    margin-top:30px;
+
+    color:#ccc;
+
+}
+
+
+
+.footer-bottom strong{
+
+    display:block;
+
+    margin:10px 0;
+
+    color:white;
+
+}
+
+
+
+.footer-social{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+
+
+.footer-social a{
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#071d49;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:.3s ease;
+
+}
+
+
+
+.footer-social a:hover{
+
+    background:#00a651;
+
+    color:white;
+
+}
+
+
+
+
+
+@media(max-width:992px){
+
+
+.footer-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.footer-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+/* =====================================
+   FINAL FOOTER STRUCTURE FIX
+   New footer structure:
+   index.html
+   social-mission.html
+===================================== */
+
+
+.footer-container{
+
+    width:100%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:40px;
+
+}
+
+
+
+.footer-container .footer-column{
+
+    width:100%;
+
+}
+
+
+
+.footer-container ul{
+
+    padding:0;
+
+    margin:0;
+
+    list-style:none;
+
+}
+
+
+
+.footer-container ul li{
+
+    margin-bottom:12px;
+
+}
+
+
+
+.footer-container .footer-logo{
+
+    width:80px;
+
+    height:auto;
+
+}
+
+
+
+
+
+/* Keep old footer pages working */
+
+.footer-grid{
+
+    width:100%;
+
+}
+
+
+
+
+
+@media(max-width:992px){
+
+
+.footer-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.footer-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+/* ==========================================
+   FINAL FOOTER ALIGNMENT FIX
+   Supports:
+   index.html
+   social-mission.html
+   old pages
+========================================== */
+
+
+/* NEW FOOTER STRUCTURE */
+
+.footer-container{
+
+    max-width:1200px;
+
+    width:100%;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:40px;
+
+    padding-bottom:40px;
+
+}
+
+
+
+.footer-column{
+
+    width:100%;
+
+}
+
+
+
+.footer-column h2{
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.footer-column h3{
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.footer-column ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+
+
+.footer-column ul li{
+
+    margin-bottom:12px;
+
+}
+
+
+
+.footer-column ul li a{
+
+    color:#ddd;
+
+    text-decoration:none;
+
+}
+
+
+
+.footer-column ul li a:hover{
+
+    color:#00a651;
+
+}
+
+
+
+.footer-logo{
+
+    width:80px;
+
+    height:auto;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+/* Newsletter alignment */
+
+.footer-column form{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+
+
+.footer-column input{
+
+    width:100%;
+
+    padding:12px;
+
+    border-radius:5px;
+
+    border:none;
+
+}
+
+
+
+.footer-column button{
+
+    padding:12px 18px;
+
+    background:#00a651;
+
+    color:white;
+
+    border:none;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+/* Social icons */
+
+.social-icons{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:20px;
+
+}
+
+
+
+.social-icons a{
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:white;
+
+    color:#071d49;
+
+}
+
+
+
+
+
+/* COPYRIGHT */
+
+.copyright{
+
+    width:100%;
+
+    text-align:center;
+
+    padding:25px 10px;
+
+    border-top:1px solid rgba(255,255,255,.2);
+
+    color:#ddd;
+
+    margin-top:20px;
+
+}
+
+
+
+.copyright small{
+
+    display:block;
+
+    margin-top:10px;
+
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+
+.footer-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.footer-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.footer-column form{
+
+    flex-direction:column;
+
+}
+
+
+}
+/* =========================================
+   RESPONSIVE PAGE BANNERS
+   VISION SAVE HUB TECH
+========================================= */
+
+.page-banner,
+.shop-banner,
+.cyber-banner,
+.gallery-banner,
+.contact-banner,
+.gaming-banner,
+.about-banner,
+.sponsors-banner,
+.social-banner {
+
+    width:100%;
+    min-height:350px;
+
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width:900px){
+
+    .page-banner,
+    .shop-banner,
+    .cyber-banner,
+    .gallery-banner,
+    .contact-banner,
+    .gaming-banner,
+    .about-banner,
+    .sponsors-banner,
+    .social-banner{
+
+        min-height:300px;
+
+        background-size:cover;
+
+        background-position:center center;
+
+    }
+
+
+    .banner-content{
+
+        width:90%;
+
+        padding:20px;
+
+    }
+
+
+    .banner-content h1{
+
+        font-size:40px;
+
+        line-height:1.2;
+
+    }
+
+
+    .banner-content p{
+
+        font-size:18px;
+
+    }
+
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:600px){
+
+    .page-banner,
+    .shop-banner,
+    .cyber-banner,
+    .gallery-banner,
+    .contact-banner,
+    .gaming-banner,
+    .about-banner,
+    .sponsors-banner,
+    .social-banner{
+
+        min-height:240px;
+
+        height:240px;
+
+        background-size:cover;
+
+        background-position:center center;
+
+    }
+
+
+    .banner-content{
+
+        width:94%;
+
+        padding:15px;
+
+    }
+
+
+    .banner-content h1{
+
+        font-size:28px;
+
+        line-height:1.2;
+
+        margin-bottom:10px;
+
+    }
+
+
+    .banner-content p{
+
+        font-size:15px;
+
+        line-height:1.5;
+
+    }
+
+}
+
+header{
+    width:100%;
+    position:relative;
+    z-index:1000;
+}
+
