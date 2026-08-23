@@ -493,7 +493,7 @@ FOUNDER SECTION
 
     margin-top:20px;
 
-    background:#0b3d91;
+    background:#ff9800;
 
     color:white;
 
@@ -506,8 +506,70 @@ FOUNDER SECTION
 }
 
 
+.learn-btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#ff9800;
 
 
+    padding:14px 30px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+}
+
+
+.explore-btn{
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#ff9800;
+
+    padding:14px 30px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+}
+
+
+.learn2-btn{
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#ff9800;
+
+    padding:14px 30px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+}
+
+
+.shop1-btn{
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#ff9800;
+
+    padding:14px 30px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+}
 
 
 
