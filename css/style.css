@@ -4620,3 +4620,403 @@ header{
     visibility: hidden;
     pointer-events: none;
 }
+
+
+
+
+/* =========================================
+HOME PAGE NAVBAR FITTING FIX
+========================================= */
+
+.navbar{
+
+    gap:20px;
+
+}
+
+
+/* Logo should not take too much space */
+
+.logo{
+
+    flex-shrink:0;
+
+}
+
+
+.logo h2{
+
+    white-space:nowrap;
+
+}
+
+
+/* Navigation */
+
+.nav-links{
+
+    flex:1;
+
+    justify-content:center;
+
+    gap:16px;
+
+}
+
+
+.nav-links a{
+
+    font-size:14px;
+
+    white-space:nowrap;
+
+}
+
+
+/* Header buttons */
+
+.buttons{
+
+    flex-shrink:0;
+
+    gap:8px;
+
+}
+
+
+.register-btn,
+.donate-btn{
+
+    padding:10px 16px;
+
+    white-space:nowrap;
+
+}
+
+/* =========================================
+MEDIUM SCREEN NAVBAR
+========================================= */
+
+@media(max-width:1200px){
+
+    .navbar{
+
+        padding:15px 3%;
+
+    }
+
+
+    .logo{
+
+        gap:10px;
+
+    }
+
+
+    .logo img{
+
+        width:55px;
+
+        height:55px;
+
+    }
+
+
+    .logo h2{
+
+        font-size:18px;
+
+    }
+
+
+    .logo small{
+
+        font-size:11px;
+
+    }
+
+
+    .nav-links{
+
+        gap:12px;
+
+    }
+
+
+    .nav-links a{
+
+        font-size:13px;
+
+    }
+
+
+    .register-btn,
+    .donate-btn{
+
+        padding:9px 13px;
+
+        font-size:13px;
+
+    }
+
+}
+
+@media(max-width:900px){
+
+    .navbar{
+
+        padding:14px 5%;
+
+    }
+
+
+    .mobile-menu{
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:center;
+
+        cursor:pointer;
+
+        font-size:28px;
+
+        z-index:10001;
+
+    }
+
+
+    .nav-links{
+
+        display:none;
+
+        position:absolute;
+
+        top:100%;
+
+        left:0;
+
+        width:100%;
+
+        max-height:calc(100vh - 80px);
+
+        overflow-y:auto;
+
+        background:white;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        padding:25px 20px;
+
+        gap:18px;
+
+        box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+        z-index:9999;
+
+    }
+
+
+    .nav-links.active{
+
+        display:flex;
+
+    }
+
+
+    .buttons{
+
+        display:none;
+
+    }
+
+}
+
+/* =========================================
+FINAL NAVBAR OVERFLOW FIX
+VISION SAVE HUB TECH
+========================================= */
+
+html,
+body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+}
+
+
+/* Prevent logo from pushing everything outside */
+
+.logo{
+    min-width:0;
+}
+
+
+.logo div{
+    min-width:0;
+}
+
+
+/* DESKTOP NAVIGATION */
+
+@media(min-width:901px){
+
+    .navbar{
+
+        padding:15px 3%;
+
+        gap:12px;
+
+    }
+
+
+    .nav-links{
+
+        min-width:0;
+
+        gap:12px;
+
+    }
+
+
+    .nav-links a{
+
+        font-size:13px;
+
+    }
+
+
+    .logo img{
+
+        width:52px;
+
+        height:52px;
+
+    }
+
+
+    .logo h2{
+
+        font-size:17px;
+
+    }
+
+
+    .buttons{
+
+        gap:8px;
+
+    }
+
+
+    .register-btn,
+    .donate-btn{
+
+        padding:9px 13px;
+
+        font-size:13px;
+
+    }
+
+}
+
+
+/* MOBILE AND TABLET */
+
+@media(max-width:900px){
+
+    .navbar{
+
+        width:100%;
+
+        padding:14px 5%;
+
+        overflow:visible;
+
+    }
+
+
+    .logo{
+
+        max-width:80%;
+
+    }
+
+
+    .logo h2{
+
+        white-space:normal;
+
+    }
+
+
+    .nav-links{
+
+        width:100%;
+
+        left:0;
+
+        right:0;
+
+        box-sizing:border-box;
+
+    }
+
+}
+
+/* =========================================
+FINAL HAMBURGER MENU DISPLAY FIX
+========================================= */
+
+
+/* DESKTOP */
+
+@media(min-width:901px){
+
+    .mobile-menu,
+    .menu-toggle{
+
+        display:none !important;
+
+    }
+
+
+    .nav-links{
+
+        display:flex !important;
+
+    }
+
+}
+
+
+/* TABLET AND PHONE */
+
+@media(max-width:900px){
+
+    .mobile-menu,
+    .menu-toggle{
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:center;
+
+        cursor:pointer;
+
+    }
+
+}
